@@ -1,0 +1,7 @@
+^.*[.]Rproj$
+^README[.]Rmd$
+^.*[.]Rproj[.]user$
+^[.]git$
+^[.]github$
+^.*\.Rproj$
+^\.Rproj\.user$

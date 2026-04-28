@@ -1,0 +1,296 @@
+COUNTRY,GSA,start_y,end_y,SPECIES,A3_ASFIS,SEX,A,B,U_FLAG,U_FLAG_w,R2,SOURCE_INFO
+GRC,,,,Aetomylaeus bovinus,MPO,C,0.0033,3.04,cm,g,0.7,Tunisia
+GRC,,,,Alopias vulpinus,ALV,C,0.006,2.824,cm,g,,
+GRC,,,,Anguilla anguilla,ELE,C,0.0000376,2.55391,mm,g,,
+GRC,,,,Aristaeomorpha foliacea,ARS,C,0.709,2.451,cm,g,,
+GRC,,,,Aristeus antennatus,ARA,C,1.2974,2.055,cm,g,,Fishbase
+GRC,,,,Arnoglossus laterna,MSF,C,0.015,2.747,cm,g,0.99,"Gökceada Island (northern Aegean Sea), 2004-2006"
+GRC,,,,Arnoglossus rueppelli,QFE,C,0.0000048,3.11101,mm,g,,
+GRC,,,,Arnoglossus thori,RNH,C,0.006,3.151,cm,g,0.93,North Aegean Sea (Thracian Sea) (39°35’-40°54’N; 24°22’-
+GRC,,,,Belone belone,GAR,C,0.002,3.36,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+GRC,,,,Boops boops,BOG,C,0.0000051,3.13268,mm,g,,
+GRC,,,,Callionymus lyra,LYY,C,0.0087,2.832,cm,g,0.97,"Turkey, N=87, Northern sea of Marmara, 2006-2007 (Nov-March)"
+GRC,,,,Capros aper,BOC,C,0.0232,2.83,cm,g,0.98,"Turkey,   North Aegean Sea, 2003 (March; July)  "
+GRC,,,,Caranx rhonchus,HMY,C,0.0000079,3.03507,mm,g,,
+GRC,,,,Carcharhinus spp.,CWZ,C,0.0009,3.3423,cm,g,,
+GRC,,,,Chelidonichthys cuculus,GUR,C,0.00787,3.118,cm,g,0.98,Saronikos
+GRC,,,,Chelidonichthys lastoviza,CTZ,C,0.0000719,2.65151,mm,g,,
+GRC,,,,Chelidonichthys lucerna,GUU,C,0.00985,3.011,cm,g,,Fishbase
+GRC,,,,Chelon auratus,MGA,C,0.0125,3,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+GRC,,,,Chelon labrosus,MLR,C,0.013,3.05,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+GRC,,,,Chelon ramada,MGC,C,0.0105,3.1,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+GRC,,,,Chelon saliens,LZS,C,0.0105,3.1,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+GRC,,,,Chromis chromis,CMK,C,0.0275,2.703,cm,g,0.79,Turkey
+GRC,,,,Citharus linguatula,CIL,C,0.05767,2.293,cm,g,0.54,
+GRC,,,,Conger conger,COE,C,0.00054,3.225,cm,g,0.91,
+GRC,,,,Coris julis,COU,C,0.0000069,3.07502,mm,g,,
+GRC,,,,Coryphaena hippurus,DOL,C,0.0067,3.15,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+GRC,,,,Dalatias licha,SCK,C,0.0019,3.12,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+GRC,,,,Dentex dentex,DEC,C,0.0000127,3.00073,mm,g,,
+GRC,,,,Dicentrarchus labrax,BSS,C,0.01216,3.076,cm,g,,Fishbase
+GRC,,,,Diplodus annularis,ANN,C,0.0000084,3.12656,mm,g,,
+GRC,,,,Diplodus puntazzo,SHR,C,0.0000109,3.05623,mm,g,,
+GRC,,,,Diplodus sargus,SWA,C,0.01382,3.07,cm,g,0.99,
+GRC,,,,Diplodus spp.,SRG,C,0.01382,3.07,cm,g,,
+GRC,,,,Diplodus vulgaris,CTB,C,0.0001327,2.53214,mm,g,,
+GRC,,,,Eledone cirrhosa,EOI,C,0.0057,2.2392,mm,g,,"Females-May 0.0035x2.3807, F+M 0.0023x2.4582, Males 0.0057x2.2392"
+GRC,,,,Eledone moschata,EDT,C,0.813073752,2.563091591,cm,g,0.8,Fisheries Research Institute of Slovenia
+GRC,,,,Eledone spp.,OCM,C,0.813073752,2.563091591,cm,g,,
+GRC,,,,Engraulis encrasicolus,ANE,C,0.0000015,3.30601,mm,g,,
+GRC,,,,Euthynnus alletteratus,LTA,C,0.0065,3.05,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+GRC,,,,Eutrigla gurnardus,GUG,C,0.0000024,3.24533,mm,g,,
+GRC,,,,Galeus melastomus,SHO,C,0.0033,2.961,cm,g,,Fishbase - Spain
+GRC,,,,Gobius niger,GBN,C,0.0001186,2.50807,mm,g,,
+GRC,,,,Helicolenus dactylopterus,BRF,C,0.000017,2.972388,mm,g,0.96,National projects
+GRC,,,,Illex coindetii,SQM,C,0.000046,2.899,mm,g,,
+GRC,,,,Katsuwonus pelamis,SKJ,C,0.004,3.2,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+GRC,,,,Lepidorhombus boscii,LDB,C,0.00351,3.267,cm,g,0.98,C Aegean
+GRC,,,,Lepidotrigla cavillone,LDV,C,0.0009964,2.09635,mm,g,,
+GRC,,,,Lithognathus mormyrus,SSB,C,0.0000056,3.15267,mm,g,,
+GRC,,,,Loligo forbesii,SQF,C,0.00044,2.488,mm,g,,
+GRC,,,,Loligo vulgaris,SQR,C,0.0003,2.5246,mm,g,,
+GRC,,,,Lophius budegassa,ANK,C,0.0000133,2.99698,mm,g,,
+GRC,,,,Lophius piscatorius,MON,C,0.0000133,2.99698,mm,g,,
+GRC,,,,Merlangius merlangus,WHG,C,0.008,3.05,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+GRC,,,,Merluccius merluccius,HKE,C,0.000003,3.15712,mm,g,,
+GRC,,,,Micromesistius poutassou,WHB,C,0.0000316,2.70981,mm,g,,
+GRC,,,,Mugil cephalus,MUF,C,0.0000148,2.94642,mm,g,,
+GRC,,,,Mugilidae,MUL,C,0.012,3.05,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+GRC,,,,Mullus barbatus,MUT,C,0.0000068,3.09593,mm,g,,
+GRC,,,,Mullus surmuletus,MUR,C,0.0000121,3.00014,mm,g,,
+GRC,,,,Mustelus asterias,SDS,C,0.0015,3.17,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+GRC,,,,Mustelus mustelus,SMD,C,0.0053,2.844,cm,g,0.99,Southern Agean Sea / 2009-2010
+GRC,,,,Mustelus punctulatus,MPT,C,0.0016,3.12,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+GRC,,,,Mustelus spp.,SDV,C,0.0016,3.13,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+GRC,,,,Myliobatis aquila,MYL,C,0.0215,2.9,cm,g,,"DW, suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+GRC,,,,Nephrops norvegicus,NEP,C,0.0004276,3.12248,mm,g,,
+GRC,,,,Oblada melanura,SBS,C,0.02185,2.831,cm,g,0.96,
+GRC,,,,Octopus vulgaris,OCC,C,0.005477,2.502,mm,g,,
+GRC,,,,Pagellus acarne,SBA,C,0.0000039,3.22972,mm,g,,
+GRC,,,,Pagellus bogaraveo,SBR,C,0.0000097,3.05769,mm,g,,
+GRC,,,,Pagellus erythrinus,PAC,C,0.0000187,2.92254,mm,g,,
+GRC,,,,Pagrus pagrus,RPG,C,0.0152,3.005,cm,g,0.98,
+GRC,,,,Parapenaeus longirostris,DPS,C,0.0043455,2.33209,mm,g,,
+GRC,,,,Penaeus kerathurus,TGS,C,0.0404857,1.77213,mm,g,,
+GRC,,,,Phycis blennoides,GFB,C,0.00346,3.238,cm,g,,Fishbase
+GRC,,,,Raja asterias,JRS,C,0.00246,3.291,cm,g,,
+GRC,,,,Raja clavata,RJC,C,0.00163,3.32,cm,g,0.99,Saronikos
+GRC,,,,Raja miraletus,JAI,C,0.00246,3.291,cm,g,0.94,
+GRC,,,,Raja radula,JAR,C,0.00515,3.07,cm,g,0.98,
+GRC,,,,Sarda sarda,BON,C,0.0000112,2.98933,mm,g,,
+GRC,,,,Sardina pilchardus,PIL,C,0.0000014,3.35448,mm,g,,
+GRC,,,,Sardinella aurita,SAA,C,0.01571,2.804,cm,g,0.86,
+GRC,,,,Sarpa salpa,SLM,C,0.01445,2.946,cm,g,0.98,
+GRC,,,,Scomber colias,VMA,C,0.0000065,3.06731,mm,g,,
+GRC,,,,Scomber scombrus,MAC,C,0.0000077,3.0010322,mm,g,,
+GRC,,,,Scomber spp.,MAZ,C,0.0000065,3.06731,mm,g,,
+GRC,,,,Scophthalmus maximus,TUR,C,0.0072,3.15,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+GRC,,,,Scorpaena porcus,BBS,C,0.000018,3.01533,mm,g,,
+GRC,,,,Scorpaena scrofa,RSE,C,0.01692,2.999,cm,g,0.98,
+GRC,,,,Scyliorhinus canicula,SYC,C,0.0012,3.26,cm,g,0.99,"Turkey, North Aegean Sea, 2003 (March; July)"
+GRC,,,,Sepia officinalis,CTC,C,0.0005,2.71,mm,g,,
+GRC,,,,Seriola dumerili,AMB,C,0.018,2.85,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+GRC,,,,Serranus cabrilla,CBR,C,0.0000224,2.87851,mm,g,,
+GRC,,,,Serranus scriba,SRK,C,0.0000108,3.02968,mm,g,,
+GRC,,,,Siganus spp.,SPI,C,0.0112,2.984,cm,g,0.97,"Fishbase, Egypt"
+GRC,,,,Solea solea,SOL,C,0.0004339,2.29994,mm,g,,
+GRC,,,,Sparus aurata,SBG,C,0.0000079,3.08869,mm,g,,
+GRC,,,,Sphyraena sphyraena,YRS,C,0.0000045,2.96491,mm,g,,
+GRC,,,,Spicara flexuosa,LXQ,C,0.0000089,3.04219,mm,g,,
+GRC,,,,Spicara maena,BPI,C,0.0000181,2.90772,mm,g,,
+GRC,,,,Spicara smaris,SPC,C,0.0000157,2.88556,mm,g,,
+GRC,,,,Spondyliosoma cantharus,BRB,C,0.0000078,3.14099,mm,g,,
+GRC,,,,Sprattus sprattus,SPR,C,0.006,3.22,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+GRC,,,,Squalus acanthias,DGS,C,0.00181,3.25,cm,g,0.98,
+GRC,,,,Squalus blainville,QUB,C,0.00181,3.25,cm,g,0.98,
+GRC,,,,Squilla mantis,MTS,C,0.72,2.63,cm,g,,"CL, suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+GRC,,,,Symphodus cinereus,YFC,C,0.0057,3.396,cm,g,0.96,
+GRC,,,,Synodus saurus,SDR,C,0.0000108,2.92972,mm,g,,
+GRC,,,,Thunnus thynnus,BFT,C,0.0000237,2.96,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+GRC,,,,Trachinus araneus,TZA,C,0.02854,2.662,cm,g,0.98,
+GRC,,,,Trachinus draco,WEG,C,0.00441,3.12,cm,g,0.96,
+GRC,,,,Trachinus radiatus,TZR,C,0.01271,2.897,cm,g,0.94,
+GRC,,,,Trachurus mediterraneus,HMM,C,0.000016,2.88495,mm,g,,
+GRC,,,,Trachurus spp.,JAX,C,0.0000125,2.93319,mm,g,,
+GRC,,,,Trachurus trachurus,HOM,C,0.0000125,2.93319,mm,g,,
+GRC,,,,Trigla lyra,GUN,C,0.0003698,2.31374,mm,g,,
+GRC,,,,Trisopterus minutus,POD,C,0.00376,3.274,cm,g,,"G. Evvoikos, 1986-88  "
+GRC,,,,Tylosurus acus,AND,C,0.0032,3.13,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+GRC,,,,Uranoscopus scaber,UUC,C,0.00775,3.228,cm,g,0.98,
+GRC,,,,Xiphias gladius,SWO,C,0.0000121,3.066,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+GRC,,,,Zeus faber,JOD,C,0.0159,2.95,cm,g,0.99,
+CYP,25,2024,2024,,MUT,C,0.0058,3.2391,cm,g,0.9811, L-W regression analysis DCF data 
+CYP,25,2024,2024,,MUR,C,0.0067,3.2168,cm,g,0.988, L-W regression analysis DCF data 
+CYP,25,2024,2024,,SPC,C,0.0037,3.3566,cm,g,, L-W regression analysis DCF data 
+CYP,25,2024,2024,,PAC,C,0.0113,3.0401,cm,g,, L-W regression analysis DCF data 
+CYP,25,2024,2024,,BOG,C,0.0076,3.0948,cm,g,, L-W regression analysis DCF data 
+CYP,25,2022,2023,,MUR,C,0.0094,3.0877,cm,g,0.974, L-W regression analysis DCF data 
+CYP,25,2023,2023,,MUT,C,0.0053,3.2742,cm,g,0.9798, L-W regression analysis DCF data 
+CYP,25,2023,2023,,PAC,C,0.0219,2.8217,cm,g,0.9916, L-W regression analysis DCF data 
+CYP,25,2023,2023,,BOG,C,0.0058,3.175,cm,g,, L-W regression analysis DCF data 
+CYP,25,2023,2023,,SPC,C,0.0039,3.316,cm,g,, L-W regression analysis DCF data 
+CYP,25,2022,2022,,MUR,C,0.0104,3.0522,cm,g,0.9682, L-W regression analysis DCF data 
+CYP,25,2022,2022,,MUT,C,0.0057,3.2505,cm,g,0.9539, L-W regression analysis DCF data 
+CYP,25,2022,2022,,SPC,C,0.0026,3.4847,cm,g,, L-W regression analysis DCF data 
+CYP,25,2022,2022,,PAC,C,0.0157,2.9246,cm,g,, L-W regression analysis DCF data 
+CYP,25,2022,2022,,BOG,C,0.0064,3.1391,cm,g,, L-W regression analysis DCF data 
+CYP,25,2021,2021,,BOG,C,0.0034,3.3593,cm,g,, L-W regression analysis DCF data 
+CYP,25,2020,2020,,BOG,C,0.0053,3.2023,cm,g,, L-W regression analysis DCF data 
+CYP,25,2019,2019,,BOG,C,0.0059,3.176,cm,g,, L-W regression analysis DCF data 
+CYP,25,2018,2018,,BOG,C,0.0064,3.1516,cm,g,, L-W regression analysis DCF data 
+CYP,25,2017,2017,,BOG,C,0.0057,3.1911,cm,g,, L-W regression analysis DCF data 
+CYP,25,2016,2016,,BOG,C,0.0048,3.2462,cm,g,, L-W regression analysis DCF data 
+CYP,25,2015,2015,,BOG,C,0.0039,3.3199,cm,g,, L-W regression analysis DCF data 
+CYP,25,2014,2014,,BOG,C,0.005,3.2357,cm,g,, L-W regression analysis DCF data 
+CYP,25,2021,2021,,MUR,C,0.0078,3.1423,cm,g,0.9703, L-W regression analysis DCF data 
+CYP,25,2020,2020,,MUR,C,0.0072,3.174,cm,g,0.9733, L-W regression analysis DCF data 
+CYP,25,2019,2019,,MUR,C,0.0066,3.2012,cm,g,0.9794, L-W regression analysis DCF data 
+CYP,25,2017,2018,,MUR,C,0.007,3.1772,cm,g,0.9762, L-W regression analysis DCF data 
+CYP,25,2016,2017,,MUR,C,0.0066,3.2027,cm,g,0.9799, L-W regression analysis DCF data 
+CYP,25,2016,2016,,MUR,C,0.0078,3.1507,cm,g,0.9821, L-W regression analysis DCF data 
+CYP,25,2015,2015,,MUR,C,0.0084,3.1331,cm,g,0.9845, L-W regression analysis DCF data 
+CYP,25,2014,2014,,MUR,C,0.0111,3.0357,cm,g,0.9826, L-W regression analysis DCF data 
+CYP,25,2021,2021,,MUT,C,0.0049,3.2838,cm,g,0.9806, L-W regression analysis DCF data 
+CYP,25,2020,2020,,MUT,C,0.0055,3.2522,cm,g,0.9672, L-W regression analysis DCF data 
+CYP,25,2019,2019,,MUT,C,0.0039,3.3674,cm,g,0.9844, L-W regression analysis DCF data 
+CYP,25,2018,2018,,MUT,C,0.005,3.276,cm,g,0.9747, L-W regression analysis DCF data 
+CYP,25,2017,2017,,MUT,C,0.0064,3.189,cm,g,0.9845, L-W regression analysis DCF data 
+CYP,25,2016,2016,,MUT,C,0.0107,3.0084,cm,g,0.9812, L-W regression analysis DCF data 
+CYP,25,2015,2015,,MUT,C,0.0064,3.1943,cm,g,, L-W regression analysis DCF data 
+CYP,25,2014,2014,,MUT,C,0.0064,3.1933,cm,g,0.9745, L-W regression analysis DCF data 
+CYP,25,2021,2021,,PAC,C,0.0141,2.9509,cm,g,, L-W regression analysis DCF data 
+CYP,25,2020,2020,,PAC,C,0.017,2.8879,cm,g,, L-W regression analysis DCF data 
+CYP,25,2019,2019,,PAC,C,0.016,2.915,cm,g,, L-W regression analysis DCF data 
+CYP,25,2018,2018,,PAC,C,0.0159,2.9153,cm,g,, L-W regression analysis DCF data 
+CYP,25,2017,2017,,PAC,C,0.0159,2.9139,cm,g,, L-W regression analysis DCF data 
+CYP,25,2016,2016,,PAC,C,0.0095,3.0968,cm,g,, L-W regression analysis DCF data 
+CYP,25,2015,2015,,PAC,C,0.014,2.968,cm,g,, L-W regression analysis DCF data 
+CYP,25,2014,2014,,PAC,C,0.0141,2.9629,cm,g,, L-W regression analysis DCF data 
+CYP,25,2021,2021,,SPC,C,0.005,3.2154,cm,g,, L-W regression analysis DCF data 
+CYP,25,2020,2020,,SPC,C,0.0048,3.261,cm,g,, L-W regression analysis DCF data 
+CYP,25,2019,2019,,SPC,C,0.0058,3.1724,cm,g,, L-W regression analysis DCF data 
+CYP,25,2018,2018,,SPC,C,0.0057,3.1744,cm,g,, L-W regression analysis DCF data 
+CYP,25,2017,2017,,SPC,C,0.012,2.8745,cm,g,, L-W regression analysis DCF data 
+CYP,25,2016,2016,,SPC,C,0.0035,3.3717,cm,g,, L-W regression analysis DCF data 
+CYP,25,2015,2015,,SPC,C,0.0026,3.4772,cm,g,, L-W regression analysis DCF data 
+CYP,25,2014,2014,,SPC,C,0.0043,3.2746,cm,g,, L-W regression analysis DCF data 
+ALL,,,,Aetomylaeus bovinus,MPO,C,0.0033,3.04,cm,g,0.7,Tunisia
+ALL,,,,Alopias vulpinus,ALV,C,0.006,2.824,cm,g,,
+ALL,,,,Anguilla anguilla,ELE,C,0.0000376,2.55391,mm,g,,
+ALL,,,,Aristaeomorpha foliacea,ARS,C,0.709,2.451,cm,g,,
+ALL,,,,Aristeus antennatus,ARA,C,1.2974,2.055,cm,g,,Fishbase
+ALL,,,,Arnoglossus laterna,MSF,C,0.015,2.747,cm,g,0.99,"Gökceada Island (northern Aegean Sea), 2004-2006"
+ALL,,,,Arnoglossus rueppelli,QFE,C,0.0000048,3.11101,mm,g,,
+ALL,,,,Arnoglossus thori,RNH,C,0.006,3.151,cm,g,0.93,North Aegean Sea (Thracian Sea) (39°35’-40°54’N; 24°22’-
+ALL,,,,Belone belone,GAR,C,0.002,3.36,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+ALL,,,,Boops boops,BOG,C,0.0000051,3.13268,mm,g,,
+ALL,,,,Callionymus lyra,LYY,C,0.0087,2.832,cm,g,0.97,"Turkey, N=87, Northern sea of Marmara, 2006-2007 (Nov-March)"
+ALL,,,,Capros aper,BOC,C,0.0232,2.83,cm,g,0.98,"Turkey,   North Aegean Sea, 2003 (March; July)  "
+ALL,,,,Caranx rhonchus,HMY,C,0.0000079,3.03507,mm,g,,
+ALL,,,,Carcharhinus spp.,CWZ,C,0.0009,3.3423,cm,g,,
+ALL,,,,Chelidonichthys cuculus,GUR,C,0.00787,3.118,cm,g,0.98,Saronikos
+ALL,,,,Chelidonichthys lastoviza,CTZ,C,0.0000719,2.65151,mm,g,,
+ALL,,,,Chelidonichthys lucerna,GUU,C,0.00985,3.011,cm,g,,Fishbase
+ALL,,,,Chelon auratus,MGA,C,0.0125,3,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+ALL,,,,Chelon labrosus,MLR,C,0.013,3.05,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+ALL,,,,Chelon ramada,MGC,C,0.0105,3.1,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+ALL,,,,Chelon saliens,LZS,C,0.0105,3.1,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+ALL,,,,Chromis chromis,CMK,C,0.0275,2.703,cm,g,0.79,Turkey
+ALL,,,,Citharus linguatula,CIL,C,0.05767,2.293,cm,g,0.54,
+ALL,,,,Conger conger,COE,C,0.00054,3.225,cm,g,0.91,
+ALL,,,,Coris julis,COU,C,0.0000069,3.07502,mm,g,,
+ALL,,,,Coryphaena hippurus,DOL,C,0.0067,3.15,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+ALL,,,,Dalatias licha,SCK,C,0.0019,3.12,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+ALL,,,,Dentex dentex,DEC,C,0.0000127,3.00073,mm,g,,
+ALL,,,,Dicentrarchus labrax,BSS,C,0.01216,3.076,cm,g,,Fishbase
+ALL,,,,Diplodus annularis,ANN,C,0.0000084,3.12656,mm,g,,
+ALL,,,,Diplodus puntazzo,SHR,C,0.0000109,3.05623,mm,g,,
+ALL,,,,Diplodus sargus,SWA,C,0.01382,3.07,cm,g,0.99,
+ALL,,,,Diplodus spp.,SRG,C,0.01382,3.07,cm,g,,
+ALL,,,,Diplodus vulgaris,CTB,C,0.0001327,2.53214,mm,g,,
+ALL,,,,Eledone cirrhosa,EOI,C,0.0057,2.2392,mm,g,,"Females-May 0.0035x2.3807, F+M 0.0023x2.4582, Males 0.0057x2.2392"
+ALL,,,,Eledone moschata,EDT,C,0.813073752,2.563091591,cm,g,0.8,Fisheries Research Institute of Slovenia
+ALL,,,,Eledone spp.,OCM,C,0.813073752,2.563091591,cm,g,,
+ALL,,,,Engraulis encrasicolus,ANE,C,0.0000015,3.30601,mm,g,,
+ALL,,,,Euthynnus alletteratus,LTA,C,0.0065,3.05,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+ALL,,,,Eutrigla gurnardus,GUG,C,0.0000024,3.24533,mm,g,,
+ALL,,,,Galeus melastomus,SHO,C,0.0033,2.961,cm,g,,Fishbase - Spain
+ALL,,,,Gobius niger,GBN,C,0.0001186,2.50807,mm,g,,
+ALL,,,,Helicolenus dactylopterus,BRF,C,0.000017,2.972388,mm,g,0.96,National projects
+ALL,,,,Illex coindetii,SQM,C,0.000046,2.899,mm,g,,
+ALL,,,,Katsuwonus pelamis,SKJ,C,0.004,3.2,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+ALL,,,,Lepidorhombus boscii,LDB,C,0.00351,3.267,cm,g,0.98,C Aegean
+ALL,,,,Lepidotrigla cavillone,LDV,C,0.0009964,2.09635,mm,g,,
+ALL,,,,Lithognathus mormyrus,SSB,C,0.0000056,3.15267,mm,g,,
+ALL,,,,Loligo forbesii,SQF,C,0.00044,2.488,mm,g,,
+ALL,,,,Loligo vulgaris,SQR,C,0.0003,2.5246,mm,g,,
+ALL,,,,Lophius budegassa,ANK,C,0.0000133,2.99698,mm,g,,
+ALL,,,,Lophius piscatorius,MON,C,0.0000133,2.99698,mm,g,,
+ALL,,,,Merlangius merlangus,WHG,C,0.008,3.05,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+ALL,,,,Merluccius merluccius,HKE,C,0.000003,3.15712,mm,g,,
+ALL,,,,Micromesistius poutassou,WHB,C,0.0000316,2.70981,mm,g,,
+ALL,,,,Mugil cephalus,MUF,C,0.0000148,2.94642,mm,g,,
+ALL,,,,Mugilidae,MUL,C,0.012,3.05,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+ALL,,,,Mullus barbatus,MUT,C,0.0000068,3.09593,mm,g,,
+ALL,,,,Mullus surmuletus,MUR,C,0.0000121,3.00014,mm,g,,
+ALL,,,,Mustelus asterias,SDS,C,0.0015,3.17,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+ALL,,,,Mustelus mustelus,SMD,C,0.0053,2.844,cm,g,0.99,Southern Agean Sea / 2009-2010
+ALL,,,,Mustelus punctulatus,MPT,C,0.0016,3.12,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+ALL,,,,Mustelus spp.,SDV,C,0.0016,3.13,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+ALL,,,,Myliobatis aquila,MYL,C,0.0215,2.9,cm,g,,"DW, suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+ALL,,,,Nephrops norvegicus,NEP,C,0.0004276,3.12248,mm,g,,
+ALL,,,,Oblada melanura,SBS,C,0.02185,2.831,cm,g,0.96,
+ALL,,,,Octopus vulgaris,OCC,C,0.005477,2.502,mm,g,,
+ALL,,,,Pagellus acarne,SBA,C,0.0000039,3.22972,mm,g,,
+ALL,,,,Pagellus bogaraveo,SBR,C,0.0000097,3.05769,mm,g,,
+ALL,,,,Pagellus erythrinus,PAC,C,0.0000187,2.92254,mm,g,,
+ALL,,,,Pagrus pagrus,RPG,C,0.0152,3.005,cm,g,0.98,
+ALL,,,,Parapenaeus longirostris,DPS,C,0.0043455,2.33209,mm,g,,
+ALL,,,,Penaeus kerathurus,TGS,C,0.0404857,1.77213,mm,g,,
+ALL,,,,Phycis blennoides,GFB,C,0.00346,3.238,cm,g,,Fishbase
+ALL,,,,Raja asterias,JRS,C,0.00246,3.291,cm,g,,
+ALL,,,,Raja clavata,RJC,C,0.00163,3.32,cm,g,0.99,Saronikos
+ALL,,,,Raja miraletus,JAI,C,0.00246,3.291,cm,g,0.94,
+ALL,,,,Raja radula,JAR,C,0.00515,3.07,cm,g,0.98,
+ALL,,,,Sarda sarda,BON,C,0.0000112,2.98933,mm,g,,
+ALL,,,,Sardina pilchardus,PIL,C,0.0000014,3.35448,mm,g,,
+ALL,,,,Sardinella aurita,SAA,C,0.01571,2.804,cm,g,0.86,
+ALL,,,,Sarpa salpa,SLM,C,0.01445,2.946,cm,g,0.98,
+ALL,,,,Scomber colias,VMA,C,0.0000065,3.06731,mm,g,,
+ALL,,,,Scomber scombrus,MAC,C,0.0000077,3.0010322,mm,g,,
+ALL,,,,Scomber spp.,MAZ,C,0.0000065,3.06731,mm,g,,
+ALL,,,,Scophthalmus maximus,TUR,C,0.0072,3.15,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+ALL,,,,Scorpaena porcus,BBS,C,0.000018,3.01533,mm,g,,
+ALL,,,,Scorpaena scrofa,RSE,C,0.01692,2.999,cm,g,0.98,
+ALL,,,,Scyliorhinus canicula,SYC,C,0.0012,3.26,cm,g,0.99,"Turkey, North Aegean Sea, 2003 (March; July)"
+ALL,,,,Sepia officinalis,CTC,C,0.0005,2.71,mm,g,,
+ALL,,,,Seriola dumerili,AMB,C,0.018,2.85,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+ALL,,,,Serranus cabrilla,CBR,C,0.0000224,2.87851,mm,g,,
+ALL,,,,Serranus scriba,SRK,C,0.0000108,3.02968,mm,g,,
+ALL,,,,Siganus spp.,SPI,C,0.0112,2.984,cm,g,0.97,"Fishbase, Egypt"
+ALL,,,,Solea solea,SOL,C,0.0004339,2.29994,mm,g,,
+ALL,,,,Sparus aurata,SBG,C,0.0000079,3.08869,mm,g,,
+ALL,,,,Sphyraena sphyraena,YRS,C,0.0000045,2.96491,mm,g,,
+ALL,,,,Spicara flexuosa,LXQ,C,0.0000089,3.04219,mm,g,,
+ALL,,,,Spicara maena,BPI,C,0.0000181,2.90772,mm,g,,
+ALL,,,,Spicara smaris,SPC,C,0.0000157,2.88556,mm,g,,
+ALL,,,,Spondyliosoma cantharus,BRB,C,0.0000078,3.14099,mm,g,,
+ALL,,,,Sprattus sprattus,SPR,C,0.006,3.22,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+ALL,,,,Squalus acanthias,DGS,C,0.00181,3.25,cm,g,0.98,
+ALL,,,,Squalus blainville,QUB,C,0.00181,3.25,cm,g,0.98,
+ALL,,,,Squilla mantis,MTS,C,0.72,2.63,cm,g,,"CL, suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+ALL,,,,Symphodus cinereus,YFC,C,0.0057,3.396,cm,g,0.96,
+ALL,,,,Synodus saurus,SDR,C,0.0000108,2.92972,mm,g,,
+ALL,,,,Thunnus thynnus,BFT,C,0.0000237,2.96,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+ALL,,,,Trachinus araneus,TZA,C,0.02854,2.662,cm,g,0.98,
+ALL,,,,Trachinus draco,WEG,C,0.00441,3.12,cm,g,0.96,
+ALL,,,,Trachinus radiatus,TZR,C,0.01271,2.897,cm,g,0.94,
+ALL,,,,Trachurus mediterraneus,HMM,C,0.000016,2.88495,mm,g,,
+ALL,,,,Trachurus spp.,JAX,C,0.0000125,2.93319,mm,g,,
+ALL,,,,Trachurus trachurus,HOM,C,0.0000125,2.93319,mm,g,,
+ALL,,,,Trigla lyra,GUN,C,0.0003698,2.31374,mm,g,,
+ALL,,,,Trisopterus minutus,POD,C,0.00376,3.274,cm,g,,"G. Evvoikos, 1986-88  "
+ALL,,,,Tylosurus acus,AND,C,0.0032,3.13,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+ALL,,,,Uranoscopus scaber,UUC,C,0.00775,3.228,cm,g,0.98,
+ALL,,,,Xiphias gladius,SWO,C,0.0000121,3.066,cm,g,,"suitable for use in the Mediterranean and adjacent waters, unless local-specific values are available."
+ALL,,,,Zeus faber,JOD,C,0.0159,2.95,cm,g,0.99,

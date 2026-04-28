@@ -1,0 +1,2354 @@
+{
+  "ALV": {
+    "scientific_name": "Alopias vulpinus",
+    "Linf_cm": 345.1,
+    "Linf_mm": 3451,
+    "n_populations_linf": 6,
+    "Lmax_cm": 601,
+    "Lmax_mm": 6010,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "AMB": {
+    "scientific_name": "Seriola dumerili",
+    "Linf_cm": 151.2,
+    "Linf_mm": 1512,
+    "n_populations_linf": 11,
+    "Lmax_cm": 183,
+    "Lmax_mm": 1830,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "FL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "AND": {
+    "scientific_name": "Tylosurus acus",
+    "Linf_cm": 79.8,
+    "Linf_mm": 798,
+    "n_populations_linf": 1,
+    "Lmax_cm": 153,
+    "Lmax_mm": 1530,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "ANE": {
+    "scientific_name": "Engraulis encrasicolus",
+    "Linf_cm": 18.8,
+    "Linf_mm": 188,
+    "n_populations_linf": 63,
+    "Lmax_cm": 21,
+    "Lmax_mm": 210,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "ANK": {
+    "scientific_name": "Lophius budegassa",
+    "Linf_cm": 89.2,
+    "Linf_mm": 892,
+    "n_populations_linf": 14,
+    "Lmax_cm": 93,
+    "Lmax_mm": 930,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "ANN": {
+    "scientific_name": "Diplodus annularis",
+    "Linf_cm": 21.5,
+    "Linf_mm": 215,
+    "n_populations_linf": 22,
+    "Lmax_cm": 28,
+    "Lmax_mm": 280,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "ARA": {
+    "scientific_name": "Aristeus antennatus",
+    "Linf_cm": null,
+    "Linf_mm": null,
+    "n_populations_linf": 0,
+    "Lmax_cm": null,
+    "Lmax_mm": null,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": null,
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": null,
+      "lmax_source_field": null
+    }
+  },
+  "ARS": {
+    "scientific_name": "Aristaeomorpha foliacea",
+    "Linf_cm": null,
+    "Linf_mm": null,
+    "n_populations_linf": 0,
+    "Lmax_cm": null,
+    "Lmax_mm": null,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": null,
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": null,
+      "lmax_source_field": null
+    }
+  },
+  "BBS": {
+    "scientific_name": "Scorpaena porcus",
+    "Linf_cm": 28.2,
+    "Linf_mm": 282,
+    "n_populations_linf": 19,
+    "Lmax_cm": 30,
+    "Lmax_mm": 300,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "BFT": {
+    "scientific_name": "Thunnus thynnus",
+    "Linf_cm": 320,
+    "Linf_mm": 3200,
+    "n_populations_linf": 29,
+    "Lmax_cm": 304,
+    "Lmax_mm": 3040,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "FL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "BOC": {
+    "scientific_name": "Capros aper",
+    "Linf_cm": 12.9,
+    "Linf_mm": 129,
+    "n_populations_linf": 5,
+    "Lmax_cm": 18,
+    "Lmax_mm": 180,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "BOG": {
+    "scientific_name": "Boops boops",
+    "Linf_cm": 29.6,
+    "Linf_mm": 296,
+    "n_populations_linf": 27,
+    "Lmax_cm": 40,
+    "Lmax_mm": 400,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "BON": {
+    "scientific_name": "Sarda sarda",
+    "Linf_cm": 72.2,
+    "Linf_mm": 722,
+    "n_populations_linf": 14,
+    "Lmax_cm": 91,
+    "Lmax_mm": 910,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "FL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "BPI": {
+    "scientific_name": "Spicara maena",
+    "Linf_cm": 21,
+    "Linf_mm": 210,
+    "n_populations_linf": 11,
+    "Lmax_cm": 23.1,
+    "Lmax_mm": 231,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "BRB": {
+    "scientific_name": "Spondyliosoma cantharus",
+    "Linf_cm": 40.3,
+    "Linf_mm": 403,
+    "n_populations_linf": 10,
+    "Lmax_cm": 40,
+    "Lmax_mm": 400,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "BRF": {
+    "scientific_name": "Helicolenus dactylopterus",
+    "Linf_cm": 37.2,
+    "Linf_mm": 372,
+    "n_populations_linf": 25,
+    "Lmax_cm": 47,
+    "Lmax_mm": 470,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "BSS": {
+    "scientific_name": "Dicentrarchus labrax",
+    "Linf_cm": 78.2,
+    "Linf_mm": 782,
+    "n_populations_linf": 36,
+    "Lmax_cm": 103,
+    "Lmax_mm": 1030,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "CBR": {
+    "scientific_name": "Serranus cabrilla",
+    "Linf_cm": 30.8,
+    "Linf_mm": 308,
+    "n_populations_linf": 15,
+    "Lmax_cm": 40,
+    "Lmax_mm": 400,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "FL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "CIL": {
+    "scientific_name": "Citharus linguatula",
+    "Linf_cm": 25.9,
+    "Linf_mm": 259,
+    "n_populations_linf": 5,
+    "Lmax_cm": 30,
+    "Lmax_mm": 300,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "CMK": {
+    "scientific_name": "Chromis chromis",
+    "Linf_cm": 14.4,
+    "Linf_mm": 144,
+    "n_populations_linf": 2,
+    "Lmax_cm": null,
+    "Lmax_mm": null,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": null,
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": null
+    }
+  },
+  "COE": {
+    "scientific_name": "Conger conger",
+    "Linf_cm": 161.9,
+    "Linf_mm": 1619,
+    "n_populations_linf": 4,
+    "Lmax_cm": 200,
+    "Lmax_mm": 2000,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "COU": {
+    "scientific_name": "Coris julis",
+    "Linf_cm": 27.2,
+    "Linf_mm": 272,
+    "n_populations_linf": 3,
+    "Lmax_cm": 23,
+    "Lmax_mm": 230,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "CTB": {
+    "scientific_name": "Diplodus vulgaris",
+    "Linf_cm": 31.3,
+    "Linf_mm": 313,
+    "n_populations_linf": 19,
+    "Lmax_cm": 45,
+    "Lmax_mm": 450,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "CTC": {
+    "scientific_name": "Sepia officinalis",
+    "Linf_cm": null,
+    "Linf_mm": null,
+    "n_populations_linf": 0,
+    "Lmax_cm": null,
+    "Lmax_mm": null,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": null,
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": null,
+      "lmax_source_field": null
+    }
+  },
+  "CTZ": {
+    "scientific_name": "Chelidonichthys lastoviza",
+    "Linf_cm": 36.5,
+    "Linf_mm": 365,
+    "n_populations_linf": 11,
+    "Lmax_cm": 30,
+    "Lmax_mm": 300,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "FL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "DEC": {
+    "scientific_name": "Dentex dentex",
+    "Linf_cm": 85,
+    "Linf_mm": 850,
+    "n_populations_linf": 8,
+    "Lmax_cm": 100,
+    "Lmax_mm": 1000,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "DGS": {
+    "scientific_name": "Squalus acanthias",
+    "Linf_cm": 120,
+    "Linf_mm": 1200,
+    "n_populations_linf": 37,
+    "Lmax_cm": 200,
+    "Lmax_mm": 2000,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "DOL": {
+    "scientific_name": "Coryphaena hippurus",
+    "Linf_cm": 134,
+    "Linf_mm": 1340,
+    "n_populations_linf": 32,
+    "Lmax_cm": 200,
+    "Lmax_mm": 2000,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "FL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "DPS": {
+    "scientific_name": "Parapenaeus longirostris",
+    "Linf_cm": null,
+    "Linf_mm": null,
+    "n_populations_linf": 0,
+    "Lmax_cm": null,
+    "Lmax_mm": null,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": null,
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": null,
+      "lmax_source_field": null
+    }
+  },
+  "EDT": {
+    "scientific_name": "Eledone moschata",
+    "Linf_cm": null,
+    "Linf_mm": null,
+    "n_populations_linf": 0,
+    "Lmax_cm": null,
+    "Lmax_mm": null,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": null,
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": null,
+      "lmax_source_field": null
+    }
+  },
+  "ELE": {
+    "scientific_name": "Anguilla anguilla",
+    "Linf_cm": 77.8,
+    "Linf_mm": 778,
+    "n_populations_linf": 43,
+    "Lmax_cm": 200,
+    "Lmax_mm": 2000,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "EOI": {
+    "scientific_name": "Eledone cirrhosa",
+    "Linf_cm": null,
+    "Linf_mm": null,
+    "n_populations_linf": 0,
+    "Lmax_cm": null,
+    "Lmax_mm": null,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": null,
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": null,
+      "lmax_source_field": null
+    }
+  },
+  "GAR": {
+    "scientific_name": "Belone belone",
+    "Linf_cm": 57.8,
+    "Linf_mm": 578,
+    "n_populations_linf": 4,
+    "Lmax_cm": 103.5,
+    "Lmax_mm": 1035,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "GBN": {
+    "scientific_name": "Gobius niger",
+    "Linf_cm": 14.8,
+    "Linf_mm": 148,
+    "n_populations_linf": 7,
+    "Lmax_cm": 15.8,
+    "Lmax_mm": 158,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "GFB": {
+    "scientific_name": "Phycis blennoides",
+    "Linf_cm": 57.2,
+    "Linf_mm": 572,
+    "n_populations_linf": 15,
+    "Lmax_cm": 110,
+    "Lmax_mm": 1100,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "GUG": {
+    "scientific_name": "Eutrigla gurnardus",
+    "Linf_cm": 34.7,
+    "Linf_mm": 347,
+    "n_populations_linf": 6,
+    "Lmax_cm": 39,
+    "Lmax_mm": 390,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "GUN": {
+    "scientific_name": "Trigla lyra",
+    "Linf_cm": 57.4,
+    "Linf_mm": 574,
+    "n_populations_linf": 3,
+    "Lmax_cm": 51,
+    "Lmax_mm": 510,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "GUR": {
+    "scientific_name": "Chelidonichthys cuculus",
+    "Linf_cm": 33.5,
+    "Linf_mm": 336,
+    "n_populations_linf": 14,
+    "Lmax_cm": 34,
+    "Lmax_mm": 340,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "FL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "GUU": {
+    "scientific_name": "Chelidonichthys lucerna",
+    "Linf_cm": 48.4,
+    "Linf_mm": 484,
+    "n_populations_linf": 15,
+    "Lmax_cm": 82.8,
+    "Lmax_mm": 828,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "HKE": {
+    "scientific_name": "Merluccius merluccius",
+    "Linf_cm": 81.6,
+    "Linf_mm": 816,
+    "n_populations_linf": 158,
+    "Lmax_cm": 140,
+    "Lmax_mm": 1400,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "HMM": {
+    "scientific_name": "Trachurus mediterraneus",
+    "Linf_cm": 38.1,
+    "Linf_mm": 381,
+    "n_populations_linf": 11,
+    "Lmax_cm": 42,
+    "Lmax_mm": 420,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "HMY": {
+    "scientific_name": "Caranx rhonchus",
+    "Linf_cm": 47,
+    "Linf_mm": 470,
+    "n_populations_linf": 2,
+    "Lmax_cm": null,
+    "Lmax_mm": null,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": null,
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": null
+    }
+  },
+  "HOM": {
+    "scientific_name": "Trachurus trachurus",
+    "Linf_cm": 40.3,
+    "Linf_mm": 403,
+    "n_populations_linf": 36,
+    "Lmax_cm": 70,
+    "Lmax_mm": 700,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "JAI": {
+    "scientific_name": "Raja miraletus",
+    "Linf_cm": 89.9,
+    "Linf_mm": 899,
+    "n_populations_linf": 2,
+    "Lmax_cm": 53.9,
+    "Lmax_mm": 539,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "WD",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "JAR": {
+    "scientific_name": "Raja radula",
+    "Linf_cm": null,
+    "Linf_mm": null,
+    "n_populations_linf": 0,
+    "Lmax_cm": null,
+    "Lmax_mm": null,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": null,
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": null,
+      "lmax_source_field": null
+    }
+  },
+  "JOD": {
+    "scientific_name": "Zeus faber",
+    "Linf_cm": 58.2,
+    "Linf_mm": 582,
+    "n_populations_linf": 12,
+    "Lmax_cm": 90,
+    "Lmax_mm": 900,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "JRS": {
+    "scientific_name": "Raja asterias",
+    "Linf_cm": 67.4,
+    "Linf_mm": 674,
+    "n_populations_linf": 1,
+    "Lmax_cm": null,
+    "Lmax_mm": null,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": null,
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": null
+    }
+  },
+  "LDB": {
+    "scientific_name": "Lepidorhombus boscii",
+    "Linf_cm": 37,
+    "Linf_mm": 370,
+    "n_populations_linf": 55,
+    "Lmax_cm": 39.5,
+    "Lmax_mm": 395,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "LDV": {
+    "scientific_name": "Lepidotrigla cavillone",
+    "Linf_cm": 16,
+    "Linf_mm": 160,
+    "n_populations_linf": 5,
+    "Lmax_cm": 22.5,
+    "Lmax_mm": 225,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "LTA": {
+    "scientific_name": "Euthynnus alletteratus",
+    "Linf_cm": 111.5,
+    "Linf_mm": 1115,
+    "n_populations_linf": 10,
+    "Lmax_cm": 102,
+    "Lmax_mm": 1020,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "FL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "LXQ": {
+    "scientific_name": "Spicara flexuosa",
+    "Linf_cm": null,
+    "Linf_mm": null,
+    "n_populations_linf": 0,
+    "Lmax_cm": null,
+    "Lmax_mm": null,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": null,
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": null,
+      "lmax_source_field": null
+    }
+  },
+  "LYY": {
+    "scientific_name": "Callionymus lyra",
+    "Linf_cm": 21.2,
+    "Linf_mm": 212,
+    "n_populations_linf": 2,
+    "Lmax_cm": 30,
+    "Lmax_mm": 300,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "LZS": {
+    "scientific_name": "Chelon saliens",
+    "Linf_cm": 34.3,
+    "Linf_mm": 343,
+    "n_populations_linf": 13,
+    "Lmax_cm": 35,
+    "Lmax_mm": 350,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "SL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "MAC": {
+    "scientific_name": "Scomber scombrus",
+    "Linf_cm": 42,
+    "Linf_mm": 420,
+    "n_populations_linf": 31,
+    "Lmax_cm": 50,
+    "Lmax_mm": 500,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "FL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "MGA": {
+    "scientific_name": "Chelon auratus",
+    "Linf_cm": 53.7,
+    "Linf_mm": 537,
+    "n_populations_linf": 35,
+    "Lmax_cm": 61,
+    "Lmax_mm": 610,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "MGC": {
+    "scientific_name": "Chelon ramada",
+    "Linf_cm": 45.9,
+    "Linf_mm": 459,
+    "n_populations_linf": 15,
+    "Lmax_cm": 70,
+    "Lmax_mm": 700,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "SL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "MLR": {
+    "scientific_name": "Chelon labrosus",
+    "Linf_cm": 46.9,
+    "Linf_mm": 468,
+    "n_populations_linf": 12,
+    "Lmax_cm": 60,
+    "Lmax_mm": 600,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "SL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "MON": {
+    "scientific_name": "Lophius piscatorius",
+    "Linf_cm": 137,
+    "Linf_mm": 1370,
+    "n_populations_linf": 17,
+    "Lmax_cm": 140,
+    "Lmax_mm": 1400,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "MPO": {
+    "scientific_name": "Aetomylaeus bovinus",
+    "Linf_cm": null,
+    "Linf_mm": null,
+    "n_populations_linf": 0,
+    "Lmax_cm": 222,
+    "Lmax_mm": 2220,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "WD",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": null,
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "MPT": {
+    "scientific_name": "Mustelus punctulatus",
+    "Linf_cm": 199.5,
+    "Linf_mm": 1995,
+    "n_populations_linf": 1,
+    "Lmax_cm": null,
+    "Lmax_mm": null,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": null,
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": null
+    }
+  },
+  "MSF": {
+    "scientific_name": "Arnoglossus laterna",
+    "Linf_cm": 15.9,
+    "Linf_mm": 159,
+    "n_populations_linf": 9,
+    "Lmax_cm": 24.2,
+    "Lmax_mm": 242,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "MTS": {
+    "scientific_name": "Squilla mantis",
+    "Linf_cm": null,
+    "Linf_mm": null,
+    "n_populations_linf": 0,
+    "Lmax_cm": null,
+    "Lmax_mm": null,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": null,
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": null,
+      "lmax_source_field": null
+    }
+  },
+  "MUF": {
+    "scientific_name": "Mugil cephalus",
+    "Linf_cm": 58.9,
+    "Linf_mm": 589,
+    "n_populations_linf": 46,
+    "Lmax_cm": 100,
+    "Lmax_mm": 1000,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "MUR": {
+    "scientific_name": "Mullus surmuletus",
+    "Linf_cm": 30.1,
+    "Linf_mm": 301,
+    "n_populations_linf": 39,
+    "Lmax_cm": 40,
+    "Lmax_mm": 400,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "FL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "MUT": {
+    "scientific_name": "Mullus barbatus",
+    "Linf_cm": 24.1,
+    "Linf_mm": 241,
+    "n_populations_linf": 71,
+    "Lmax_cm": 38.2,
+    "Lmax_mm": 382,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "FL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "MYL": {
+    "scientific_name": "Myliobatis aquila",
+    "Linf_cm": null,
+    "Linf_mm": null,
+    "n_populations_linf": 0,
+    "Lmax_cm": null,
+    "Lmax_mm": null,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": null,
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": null,
+      "lmax_source_field": null
+    }
+  },
+  "NEP": {
+    "scientific_name": "Nephrops norvegicus",
+    "Linf_cm": null,
+    "Linf_mm": null,
+    "n_populations_linf": 0,
+    "Lmax_cm": null,
+    "Lmax_mm": null,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": null,
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": null,
+      "lmax_source_field": null
+    }
+  },
+  "OCC": {
+    "scientific_name": "Octopus vulgaris",
+    "Linf_cm": null,
+    "Linf_mm": null,
+    "n_populations_linf": 0,
+    "Lmax_cm": null,
+    "Lmax_mm": null,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": null,
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": null,
+      "lmax_source_field": null
+    }
+  },
+  "PAC": {
+    "scientific_name": "Pagellus erythrinus",
+    "Linf_cm": 35.8,
+    "Linf_mm": 358,
+    "n_populations_linf": 22,
+    "Lmax_cm": 60,
+    "Lmax_mm": 600,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "FL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "PIL": {
+    "scientific_name": "Sardina pilchardus",
+    "Linf_cm": 19.9,
+    "Linf_mm": 199,
+    "n_populations_linf": 68,
+    "Lmax_cm": 27,
+    "Lmax_mm": 270,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "POD": {
+    "scientific_name": "Trisopterus minutus",
+    "Linf_cm": 24.7,
+    "Linf_mm": 247,
+    "n_populations_linf": 17,
+    "Lmax_cm": 31,
+    "Lmax_mm": 310,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "QFE": {
+    "scientific_name": "Arnoglossus rueppelli",
+    "Linf_cm": null,
+    "Linf_mm": null,
+    "n_populations_linf": 0,
+    "Lmax_cm": null,
+    "Lmax_mm": null,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": null,
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": null,
+      "lmax_source_field": null
+    }
+  },
+  "QUB": {
+    "scientific_name": "Squalus blainville",
+    "Linf_cm": 101,
+    "Linf_mm": 1010,
+    "n_populations_linf": 6,
+    "Lmax_cm": 121.6,
+    "Lmax_mm": 1216,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "RJC": {
+    "scientific_name": "Raja clavata",
+    "Linf_cm": 118,
+    "Linf_mm": 1180,
+    "n_populations_linf": 20,
+    "Lmax_cm": 139,
+    "Lmax_mm": 1390,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "RNH": {
+    "scientific_name": "Arnoglossus thori",
+    "Linf_cm": 18.2,
+    "Linf_mm": 182,
+    "n_populations_linf": 3,
+    "Lmax_cm": 20.5,
+    "Lmax_mm": 205,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "RPG": {
+    "scientific_name": "Pagrus pagrus",
+    "Linf_cm": 46.6,
+    "Linf_mm": 466,
+    "n_populations_linf": 26,
+    "Lmax_cm": 91,
+    "Lmax_mm": 910,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "RSE": {
+    "scientific_name": "Scorpaena scrofa",
+    "Linf_cm": 51,
+    "Linf_mm": 510,
+    "n_populations_linf": 4,
+    "Lmax_cm": 53.6,
+    "Lmax_mm": 536,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "SAA": {
+    "scientific_name": "Sardinella aurita",
+    "Linf_cm": 28.1,
+    "Linf_mm": 281,
+    "n_populations_linf": 37,
+    "Lmax_cm": 41,
+    "Lmax_mm": 410,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "SBA": {
+    "scientific_name": "Pagellus acarne",
+    "Linf_cm": 27.4,
+    "Linf_mm": 274,
+    "n_populations_linf": 12,
+    "Lmax_cm": 37,
+    "Lmax_mm": 370,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "SBG": {
+    "scientific_name": "Sparus aurata",
+    "Linf_cm": 53.9,
+    "Linf_mm": 539,
+    "n_populations_linf": 13,
+    "Lmax_cm": 70,
+    "Lmax_mm": 700,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "SBR": {
+    "scientific_name": "Pagellus bogaraveo",
+    "Linf_cm": 54.4,
+    "Linf_mm": 544,
+    "n_populations_linf": 18,
+    "Lmax_cm": 53,
+    "Lmax_mm": 530,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "FL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "SBS": {
+    "scientific_name": "Oblada melanura",
+    "Linf_cm": null,
+    "Linf_mm": null,
+    "n_populations_linf": 0,
+    "Lmax_cm": null,
+    "Lmax_mm": null,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": null,
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": null,
+      "lmax_source_field": null
+    }
+  },
+  "SCK": {
+    "scientific_name": "Dalatias licha",
+    "Linf_cm": 127,
+    "Linf_mm": 1270,
+    "n_populations_linf": 3,
+    "Lmax_cm": 182,
+    "Lmax_mm": 1820,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "SDR": {
+    "scientific_name": "Synodus saurus",
+    "Linf_cm": 34.6,
+    "Linf_mm": 346,
+    "n_populations_linf": 3,
+    "Lmax_cm": 31,
+    "Lmax_mm": 310,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "SDS": {
+    "scientific_name": "Mustelus asterias",
+    "Linf_cm": 113.6,
+    "Linf_mm": 1136,
+    "n_populations_linf": 2,
+    "Lmax_cm": 154,
+    "Lmax_mm": 1540,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "SHO": {
+    "scientific_name": "Galeus melastomus",
+    "Linf_cm": 67.2,
+    "Linf_mm": 672,
+    "n_populations_linf": 1,
+    "Lmax_cm": 90,
+    "Lmax_mm": 900,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "SHR": {
+    "scientific_name": "Diplodus puntazzo",
+    "Linf_cm": 34.1,
+    "Linf_mm": 342,
+    "n_populations_linf": 2,
+    "Lmax_cm": null,
+    "Lmax_mm": null,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": null,
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "SKJ": {
+    "scientific_name": "Katsuwonus pelamis",
+    "Linf_cm": 82.5,
+    "Linf_mm": 825,
+    "n_populations_linf": 63,
+    "Lmax_cm": 108,
+    "Lmax_mm": 1080,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "FL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "SLM": {
+    "scientific_name": "Sarpa salpa",
+    "Linf_cm": 44.7,
+    "Linf_mm": 447,
+    "n_populations_linf": 5,
+    "Lmax_cm": 45.2,
+    "Lmax_mm": 452,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "FL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "SMD": {
+    "scientific_name": "Mustelus mustelus",
+    "Linf_cm": 132.9,
+    "Linf_mm": 1329,
+    "n_populations_linf": 4,
+    "Lmax_cm": 164,
+    "Lmax_mm": 1640,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "SOL": {
+    "scientific_name": "Solea solea",
+    "Linf_cm": 38.2,
+    "Linf_mm": 382,
+    "n_populations_linf": 62,
+    "Lmax_cm": 70,
+    "Lmax_mm": 700,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "FL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "SPC": {
+    "scientific_name": "Spicara smaris",
+    "Linf_cm": 19.6,
+    "Linf_mm": 196,
+    "n_populations_linf": 21,
+    "Lmax_cm": 24.2,
+    "Lmax_mm": 242,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "SPR": {
+    "scientific_name": "Sprattus sprattus",
+    "Linf_cm": 14.7,
+    "Linf_mm": 147,
+    "n_populations_linf": 27,
+    "Lmax_cm": 15,
+    "Lmax_mm": 150,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "SQF": {
+    "scientific_name": "Loligo forbesii",
+    "Linf_cm": null,
+    "Linf_mm": null,
+    "n_populations_linf": 0,
+    "Lmax_cm": null,
+    "Lmax_mm": null,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": null,
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": null,
+      "lmax_source_field": null
+    }
+  },
+  "SQM": {
+    "scientific_name": "Illex coindetii",
+    "Linf_cm": null,
+    "Linf_mm": null,
+    "n_populations_linf": 0,
+    "Lmax_cm": null,
+    "Lmax_mm": null,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": null,
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": null,
+      "lmax_source_field": null
+    }
+  },
+  "SQR": {
+    "scientific_name": "Loligo vulgaris",
+    "Linf_cm": null,
+    "Linf_mm": null,
+    "n_populations_linf": 0,
+    "Lmax_cm": null,
+    "Lmax_mm": null,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": null,
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": null,
+      "lmax_source_field": null
+    }
+  },
+  "SRK": {
+    "scientific_name": "Serranus scriba",
+    "Linf_cm": 31.7,
+    "Linf_mm": 317,
+    "n_populations_linf": 6,
+    "Lmax_cm": 32.3,
+    "Lmax_mm": 323,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "SSB": {
+    "scientific_name": "Lithognathus mormyrus",
+    "Linf_cm": 38.4,
+    "Linf_mm": 384,
+    "n_populations_linf": 13,
+    "Lmax_cm": 55,
+    "Lmax_mm": 550,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "SWA": {
+    "scientific_name": "Diplodus sargus",
+    "Linf_cm": 41.7,
+    "Linf_mm": 417,
+    "n_populations_linf": 9,
+    "Lmax_cm": 45,
+    "Lmax_mm": 450,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "FL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "SWO": {
+    "scientific_name": "Xiphias gladius",
+    "Linf_cm": 245.4,
+    "Linf_mm": 2454,
+    "n_populations_linf": 24,
+    "Lmax_cm": 359,
+    "Lmax_mm": 3590,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "SYC": {
+    "scientific_name": "Scyliorhinus canicula",
+    "Linf_cm": 74.3,
+    "Linf_mm": 743,
+    "n_populations_linf": 6,
+    "Lmax_cm": 70,
+    "Lmax_mm": 700,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "TGS": {
+    "scientific_name": "Penaeus kerathurus",
+    "Linf_cm": null,
+    "Linf_mm": null,
+    "n_populations_linf": 0,
+    "Lmax_cm": null,
+    "Lmax_mm": null,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": null,
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": null,
+      "lmax_source_field": null
+    }
+  },
+  "TUR": {
+    "scientific_name": "Scophthalmus maximus",
+    "Linf_cm": 54.7,
+    "Linf_mm": 546,
+    "n_populations_linf": 32,
+    "Lmax_cm": 81.5,
+    "Lmax_mm": 815,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "TZA": {
+    "scientific_name": "Trachinus araneus",
+    "Linf_cm": 32.5,
+    "Linf_mm": 326,
+    "n_populations_linf": 1,
+    "Lmax_cm": 47.3,
+    "Lmax_mm": 473,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "TZR": {
+    "scientific_name": "Trachinus radiatus",
+    "Linf_cm": 41.9,
+    "Linf_mm": 419,
+    "n_populations_linf": 2,
+    "Lmax_cm": 50.7,
+    "Lmax_mm": 507,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "UUC": {
+    "scientific_name": "Uranoscopus scaber",
+    "Linf_cm": 36.4,
+    "Linf_mm": 364,
+    "n_populations_linf": 3,
+    "Lmax_cm": 23.4,
+    "Lmax_mm": 234,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "VMA": {
+    "scientific_name": "Scomber colias",
+    "Linf_cm": 49.5,
+    "Linf_mm": 495,
+    "n_populations_linf": 19,
+    "Lmax_cm": 38.6,
+    "Lmax_mm": 386,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "WEG": {
+    "scientific_name": "Trachinus draco",
+    "Linf_cm": 35.1,
+    "Linf_mm": 351,
+    "n_populations_linf": 7,
+    "Lmax_cm": 53,
+    "Lmax_mm": 530,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "WHB": {
+    "scientific_name": "Micromesistius poutassou",
+    "Linf_cm": 36,
+    "Linf_mm": 360,
+    "n_populations_linf": 27,
+    "Lmax_cm": 42.5,
+    "Lmax_mm": 425,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "WHG": {
+    "scientific_name": "Merlangius merlangus",
+    "Linf_cm": 41.3,
+    "Linf_mm": 413,
+    "n_populations_linf": 99,
+    "Lmax_cm": 70,
+    "Lmax_mm": 700,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "YFC": {
+    "scientific_name": "Symphodus cinereus",
+    "Linf_cm": 14.1,
+    "Linf_mm": 141,
+    "n_populations_linf": 5,
+    "Lmax_cm": null,
+    "Lmax_mm": null,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": null,
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  },
+  "YRS": {
+    "scientific_name": "Sphyraena sphyraena",
+    "Linf_cm": 55.3,
+    "Linf_mm": 553,
+    "n_populations_linf": 1,
+    "Lmax_cm": 41.2,
+    "Lmax_mm": 412,
+    "length_min_cm": null,
+    "length_min_mm": null,
+    "length_type": "TL",
+    "length_unit": "cm",
+    "source": {
+      "linf": "FishBase via rfishbase::popgrowth()",
+      "lmax": "FishBase via rfishbase::popchar()",
+      "unit": "FishBase standardized length unit"
+    },
+    "metadata": {
+      "linf_source_field": "Loo",
+      "lmax_source_field": "Lmax"
+    }
+  }
+}

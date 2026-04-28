@@ -1,0 +1,47 @@
+Package: stat4RDBFIS
+Title: Quality Control and Statistical Raising for Med and BS RCG Fisheries Data
+Version: 0.0.1
+Authors@R: c(
+    person("Ilaria", "Costantini", email = "ilaria.costantini@cnr.it",
+           role = c("aut", "cre")),
+    person("Vasiliki", "Sgardeli", email = "vsgard@hcmr.gr",
+           role = c("aut")),
+    person("Kostas", "Touloumis", email = "touloumisk@inale.gr",
+           role = c("ctb")),
+    person("Alessandro", "Mannini", email = "alessandro.mannini@cnr.it",
+           role = c("ctb")),
+    person("Stefanos", "Kavadas", email = "stefanos@hcmr.gr",
+          role = c("ctb"))
+  )
+Description: Tools for checking, preparing and analysing RCG template data
+    (landings CL and sampling CS) from Mediterranean and Black Sea fisheries,
+    developed in the RDBFIS III project Activity 10 by the stat4RDBFIS Core
+    Team. The package includes validation of landings and sampling templates,
+    crosschecks between datasets, preparation and raising of landings and
+    discard LFDs, country-specific raising methods, age-length key estimation,
+    discard ratio estimation, and routines for maturity and sex-ratio outputs.
+Depends:
+    R (>= 4.1.0)
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Imports:
+    boot,
+    dplyr (>= 1.1.0),
+    ggplot2,
+    magrittr,
+    jsonlite (>= 1.8.0),
+    lubridate (>= 1.9.0),
+    readr (>= 2.1.0),
+    rlang (>= 1.1.0),
+    stringr (>= 1.5.0),
+    tibble,
+    tidyr (>= 1.3.0),
+    tidyselect
+Suggests:
+    rstudioapi,
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+Config/testthat/edition: 3
