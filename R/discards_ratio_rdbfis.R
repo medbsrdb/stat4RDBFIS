@@ -4,7 +4,7 @@
 #'
 #' This function is part of the stat4RDBFIS analytical workflow after quality
 #' control and crosschecks. It uses the cleaned sampling template in memory and
-#' estimates discard ratios by country, year, area, gear, species, and sampling
+#' estimates discard ratios by country, year, area, metier, species, and sampling
 #' aggregation level.
 #'
 #' @param sampling_df data.frame. Clean sampling data already loaded in memory.
@@ -246,7 +246,8 @@ discard_ratio_rdbfis <- function(
 
     dat_filt <- dat_sub %>%
       mutate(
-        gear = substr(fishing_activity_category_eu_l6, 1, 3)
+        gear = substr(fishing_activity_category_eu_l6, 1, 3),
+        metier = fishing_activity_category_eu_l6
       ) %>%
       filter(
         catch_category %in% c("Lan", "Dis"),
@@ -266,7 +267,9 @@ discard_ratio_rdbfis <- function(
         species,
         psu = .data[[psu_col]],
         catch_category,
-        weight
+        weight,
+        length_class,
+        number_at_length
       )
 
     if (nrow(dat_filt) == 0) {
@@ -274,7 +277,9 @@ discard_ratio_rdbfis <- function(
     }
 
     psu_level <- dat_filt %>%
-      group_by(flag_country, year, area, gear, species, psu, catch_category) %>%
+      select(-number_at_length, -length_class) %>%
+      distinct() %>%
+      group_by(flag_country, year, area, metier, species, psu, catch_category) %>%
       summarise(weight = sum(weight, na.rm = TRUE), .groups = "drop") %>%
       tidyr::pivot_wider(
         names_from = catch_category,
@@ -296,7 +301,7 @@ discard_ratio_rdbfis <- function(
       psu_level$flag_country,
       psu_level$year,
       psu_level$area,
-      psu_level$gear,
+      psu_level$metier,
       psu_level$species,
       drop = TRUE,
       lex.order = TRUE
@@ -305,7 +310,7 @@ discard_ratio_rdbfis <- function(
     groups <- split(psu_level, group_id)
 
     results_list <- lapply(groups, function(df) {
-      keys <- df[1, c("flag_country", "year", "area", "gear", "species"), drop = FALSE]
+      keys <- df[1, c("flag_country", "year", "area", "metier", "species"), drop = FALSE]
       n_psu <- n_distinct(df$psu)
       est <- estimate_ratios(df)
 
@@ -366,7 +371,7 @@ discard_ratio_rdbfis <- function(
     })
 
     bind_rows(results_list) %>%
-      arrange(flag_country, year, area, gear, species)
+      arrange(flag_country, year, area, metier, species)
   }
 
   out <- lapply(agg_levels, function(a) {
@@ -374,7 +379,7 @@ discard_ratio_rdbfis <- function(
     process_one_level(dat_sub, a)
   }) %>%
     bind_rows() %>%
-    arrange(flag_country, year, area, gear, species)
+    arrange(flag_country, year, area, metier, species)
 
   output_file <- file.path(
     out_dir,
