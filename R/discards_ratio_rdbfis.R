@@ -4,8 +4,7 @@
 #'
 #' This function is part of the stat4RDBFIS analytical workflow after quality
 #' control and crosschecks. It uses the cleaned sampling template in memory and
-#' estimates discard ratios by country, year, area, metier, species, and sampling
-#' aggregation level.
+#' estimates discard ratios by country, year, area, metier, species.
 #'
 #' @param sampling_df data.frame. Clean sampling data already loaded in memory.
 #' @param out_dir character. Output folder path (created if missing).
@@ -263,7 +262,7 @@ discard_ratio_rdbfis <- function(
         flag_country,
         year,
         area,
-        gear,
+        metier,
         species,
         psu = .data[[psu_col]],
         catch_category,
