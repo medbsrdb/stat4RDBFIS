@@ -307,7 +307,7 @@ discards_rdbfis <- function(sampling_df, landings_df, SP = NULL, GSA = NULL, YEA
     discard_ratio_res <- discard_ratio_df
   }
 
-  ratio_cols <- c("flag_country", "year", "area", "gear", "species", "discards", "landings")
+  ratio_cols <- c("flag_country", "year", "area", "metier", "species", "discards", "landings")
   missing_ratio_cols <- setdiff(ratio_cols, names(discard_ratio_res))
   if (length(missing_ratio_cols) > 0) {
     stop(
@@ -316,7 +316,7 @@ discards_rdbfis <- function(sampling_df, landings_df, SP = NULL, GSA = NULL, YEA
     )
   }
   discard_ratio_res <- discard_ratio_res[, ratio_cols] %>%
-    group_by(flag_country, year, area, gear, species) %>%
+    group_by(flag_country, year, area, metier, species) %>%
     summarise(
       discards = sum(.data$discards, na.rm = TRUE),
       landings = sum(.data$landings, na.rm = TRUE),
@@ -366,7 +366,7 @@ discards_rdbfis <- function(sampling_df, landings_df, SP = NULL, GSA = NULL, YEA
   # 12) Estimate total discards by stratum
 
   discards_totals <- landings_totals %>%
-    left_join(discard_ratio_res, by = c("flag_country", "year", "area", "gear", "species"))
+    left_join(discard_ratio_res, by = c("flag_country", "year", "area", "metier", "species"))
   discards_totals$landings_weight <- discards_totals$land
   discards_totals$land <- discards_totals$landings_weight * discards_totals$discard_ratio_landings
 
