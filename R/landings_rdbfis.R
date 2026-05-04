@@ -668,7 +668,7 @@ landings_rdbfis <- function(sampling_df, landings_df,
 
   # 16) Make and save plots
 
-  lfd_plot_rdbfis(raised_lfd, out_dir, "Land")
+  lfd_plot_rdbfis1(raised_lfd, out_dir, "Land")
 
   # 17) Prepare MED&BS landings output
 

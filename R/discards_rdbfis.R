@@ -84,26 +84,25 @@ discards_rdbfis <- function(sampling_df, landings_df, SP = NULL, GSA = NULL, YEA
   old_opts <- options(dplyr.summarise.inform = FALSE)
   on.exit(options(old_opts), add = TRUE)
 
-  # 1) get the MS, subset and stop if there are no sampling records
+  # 1) get the MS, subset and stop if there are no sampling records 
   MS <- unique(sampling_df$flag_country)
-
+  
   if (length(MS) != 1) {
     stop("Input dataframe must contain only one country.")
   }
-
+  
   if (nrow(landings_df) == 0) {
     stop("  No Landings records found for ", MS)
   }
   message(paste("\nProcessing landings' lfd for: ", "MS = ", MS))
-
-  # 2) Select samples to raise
-
+  
+  # 2) Select samples to raise 
+  
   sampling_df <- subset(sampling_df, sampling_type %in% sample_types)
   if (nrow(sampling_df) == 0) {
-    stop("  No Sampling records for catch_category = Lan and selected sampling types ",
-         paste(sample_types, collapse = ", "), " found for  ", MS)
+    stop("  No Sampling records for catch_category = Lan and selected sampling types ", sample_use, " found for  ", MS)
   }
-
+  
   # 2a) Use maturity samples in the raising?
   if(!use_mat){
     sampling_df <- subset(sampling_df, is.na(maturity_method))
@@ -111,9 +110,9 @@ discards_rdbfis <- function(sampling_df, landings_df, SP = NULL, GSA = NULL, YEA
   if (nrow(sampling_df) == 0) {
     stop("  No Sampling records remaining after removing samples collected for maturity ", MS)
   }
-
+  
   # 3) subset to user selection (GSA, SP, YEAR)
-
+  
   if (!is.null(GSA)){
     sampling_df <- subset(sampling_df, area %in% GSA)
     landings_df <- subset(landings_df, area %in% GSA)
@@ -121,7 +120,7 @@ discards_rdbfis <- function(sampling_df, landings_df, SP = NULL, GSA = NULL, YEA
       stop("  No sampling records for ", MS, " for the selected area(s): ", paste(GSA, collapse=', ' ))
     }
   }
-
+  
   if (!is.null(SP)){
     sampling_df <- subset(sampling_df, species %in% SP)
     landings_df <- subset(landings_df, species %in% SP)
@@ -129,7 +128,7 @@ discards_rdbfis <- function(sampling_df, landings_df, SP = NULL, GSA = NULL, YEA
       stop("  No sampling records for ", MS, " for the selected GSA(s) for species(s): ", paste(SP, collapse=', ' ))
     }
   }
-
+  
   if (!is.null(YEAR)){
     sampling_df <- subset(sampling_df, year %in% YEAR)
     landings_df <- subset(landings_df, year %in% YEAR)
@@ -137,34 +136,23 @@ discards_rdbfis <- function(sampling_df, landings_df, SP = NULL, GSA = NULL, YEA
       stop("  No sampling records for ", MS, " for the selected GSA(s) and species(s) in years(s): ", paste(YEAR, collapse=', ' ))
     }
   }
-
+  
   message("  Landings records: ", nrow(landings_df))
   message("  Sampling records: ", nrow(sampling_df))
-
+  
   # 4) Create output folder
-
+  
   if (!dir.exists(out_dir)) dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
-  if (is.null(discard_ratio_out_dir)) {
-    out_parent <- dirname(out_dir)
-    discard_ratio_out_dir <- if (identical(out_parent, ".")) {
-      file.path(out_dir, "discard_ratio")
-    } else {
-      file.path(out_parent, "discard_ratio")
-    }
-  }
-  if (!dir.exists(discard_ratio_out_dir)) {
-    dir.create(discard_ratio_out_dir, recursive = TRUE, showWarnings = FALSE)
-  }
-
+  
   # 5) Minimal header checks  global
-
+  
   # We only check for the fields that are strictly necessary for the preparation of lfd_base and discards_totals.
   required_landings <- c(
     "flag_country", "year", "quarter", "area", "species",
     "fishing_activity_category_eu_l6",
     "official_landings_weight"
   )
-
+  
   missing_L <- setdiff(required_landings, names(landings_df))
   if (length(missing_L) > 0) {
     stop(
@@ -174,7 +162,7 @@ discards_rdbfis <- function(sampling_df, landings_df, SP = NULL, GSA = NULL, YEA
       )
     )
   }
-
+  
   required_sampling <- c(
     "sampling_type", "flag_country", "year", "date", "area", "species",
     "fishing_activity_category_eu_l6", "catch_category", "trip_code", "station_code",
@@ -183,7 +171,7 @@ discards_rdbfis <- function(sampling_df, landings_df, SP = NULL, GSA = NULL, YEA
     "commercial_size_category",
     "aggregation_level"
   )
-
+  
   missing_S <- setdiff(required_sampling, names(sampling_df))
   if (length(missing_S) > 0) {
     stop(
@@ -193,9 +181,9 @@ discards_rdbfis <- function(sampling_df, landings_df, SP = NULL, GSA = NULL, YEA
       )
     )
   }
-
+  
   # 6) Normalise essential fields  global
-
+  
   landings_df <- landings_df %>%
     mutate(
       flag_country = toupper(trimws(as.character(flag_country))),
@@ -208,9 +196,9 @@ discards_rdbfis <- function(sampling_df, landings_df, SP = NULL, GSA = NULL, YEA
       official_landings_weight =
         suppressWarnings(as.numeric(official_landings_weight))
     )
-
+  
   # Sampling side
-
+  
   sampling_df <- sampling_df %>%
     mutate(
       sampling_type = toupper(trimws(as.character(sampling_type))),
@@ -235,113 +223,83 @@ discards_rdbfis <- function(sampling_df, landings_df, SP = NULL, GSA = NULL, YEA
       commercial_size_category = trimws(as.character(commercial_size_category)),
       aggregation_level   = toupper(trimws(as.character(aggregation_level)))
     )
-
-  # get the quarter
+  
+  # get the quarter 
   sampling_df$date_parsed <- suppressWarnings(as.Date(sampling_df$date, format = "%d/%m/%Y"))
-  sampling_df$quarter <- ceiling(as.integer(lubridate::month(sampling_df$date_parsed))/3)
-
-
+  sampling_df$quarter <- ceiling(as.integer(month(sampling_df$date_parsed))/3)  
+  
+  
   # 7) check for and remove NAs in basic numeric and character fields that take part in aggregations
-
+  
   indl <- which(is.na(landings_df$official_landings_weight))
   if(length(indl)!=0){
     landings_df <- landings_df[-indl,]
   }
-
+  
   inds1 <- which(is.na(sampling_df$weight))
   inds2 <- which(is.na(sampling_df$subsample_weight))
   inds3 <- which(is.na(sampling_df$aggregation_level))
-
+  
   inds <- unique(c(inds1, inds2, inds3))
   if(length(inds)!=0){
     sampling_df <- sampling_df[-inds,]
   }
-
+  
   # 8) adds stock and stratum identifiers, and shorter code for metier
-
+  
   # Add stock identifiers
   sampling_df <- sampling_df %>%
     mutate(stock = paste(
       area, species,
-      sep = "_"))
-
+      sep = "_")) 
+  
   landings_df <- landings_df %>%
     mutate(stock = paste(
       area, species,
-      sep = "_"))
-
+      sep = "_")) 
+  
   stocks <- sampling_df %>%
     mutate(stock = paste(area, species, sep = "_")) %>%
     distinct(stock, area, species)
-
-  # Define stratum (quarter level stratum)
+  
+  # Define stratum (quarter level stratum) 
   sampling_df <- sampling_df %>%
     group_by(year, quarter, fishing_activity_category_eu_l6) %>%
     mutate(stratum = paste0(year, '_Q', quarter, '_', fishing_activity_category_eu_l6)) %>%
     ungroup()
-
+  
   # 9) Estimate total number of sampled hauls and append to sampling_df (these are used for ESP)
-  nhauls      <- sampling_df %>%
-    group_by(year, quarter, area, trip_code, fishing_activity_category_eu_l6, stratum) %>%
+  nhauls      <- sampling_df %>% 
+    group_by(year, quarter, area, trip_code, fishing_activity_category_eu_l6, stratum) %>% 
     summarize(n_sampled_hauls= n_distinct(station_code, na.rm=T) )
   sampling_df <- sampling_df %>% left_join(nhauls, by = c("year", "area", "quarter", "trip_code", "fishing_activity_category_eu_l6", 'stratum'))
-  sampling_df$n_sampled_hauls[sampling_df$station_code == '999'] <- NA
-
-  # 10) Estimate discard ratios, unless a previously computed table is supplied.
-  if (is.null(discard_ratio_df)) {
-    discard_ratio_res <- discard_ratio_rdbfis(
-      sampling_df = sampling_df,
-      out_dir = discard_ratio_out_dir,
-      MS = MS,
-      GSA = GSA,
-      YEAR = YEAR,
-      SP = SP,
-      R = 1000,
-      conf = 0.95,
-      seed = 123
-    )
-  } else {
-    if (!inherits(discard_ratio_df, "data.frame")) {
-      stop("discard_ratio_df must be a data.frame returned by discard_ratio_rdbfis().")
-    }
-    discard_ratio_res <- discard_ratio_df
-  }
-
-  ratio_cols <- c("flag_country", "year", "area", "gear", "species", "discards", "landings")
-  missing_ratio_cols <- setdiff(ratio_cols, names(discard_ratio_res))
-  if (length(missing_ratio_cols) > 0) {
-    stop(
-      "discard_ratio_rdbfis() output is missing required columns: ",
-      paste(missing_ratio_cols, collapse = ", ")
-    )
-  }
-  discard_ratio_res <- discard_ratio_res[, ratio_cols] %>%
-    group_by(flag_country, year, area, gear, species) %>%
-    summarise(
-      discards = sum(.data$discards, na.rm = TRUE),
-      landings = sum(.data$landings, na.rm = TRUE),
-      discard_ratio_landings = ifelse(
-        sum(.data$landings, na.rm = TRUE) > 0,
-        sum(.data$discards, na.rm = TRUE) / sum(.data$landings, na.rm = TRUE),
-        NA_real_
-      ),
-      .groups = "drop"
-    )
-
+  sampling_df$n_sampled_hauls[sampling_df$station_code == '999'] <- NA  
+  
+  # 10) Estimate discard ratios
+  discard_ratio_res <- discard_ratio_rdbfis(
+    sampling_df = sampling_df,
+    out_dir = file.path(out_dir, "discard_ratio"),
+    R = 500,
+    conf = 0.95,
+    seed = 123
+  )
+  
+  discard_ratio_res <- discard_ratio_res[, c('year', 'area', 'metier', 'species', 'discard_ratio_landings')]
+  
   # 10a) Estimate discard ratio for ESP as number of trips sampled for discards/total number of trips per stratum
-  trips_cat <- sampling_df %>%
-    group_by(year, quarter, area, fishing_activity_category_eu_l6, stratum, catch_category) %>%
+  trips_cat <- sampling_df %>% 
+    group_by(year, quarter, area, fishing_activity_category_eu_l6, stratum, catch_category) %>% 
     summarize(ntrips= n_distinct(trip_code, na.rm=T) )
-
-  trips_total <- sampling_df %>%
-    group_by(year, quarter, area, fishing_activity_category_eu_l6, stratum) %>%
+  
+  trips_total <- sampling_df %>% 
+    group_by(year, quarter, area, fishing_activity_category_eu_l6, stratum) %>% 
     summarize(ntrips_tot= n_distinct(trip_code, na.rm=T) )
-
+  
   disc_ratio_ESP <- trips_total %>% left_join(trips_cat, by = c("year", "area", "quarter", "fishing_activity_category_eu_l6", "stratum"))
   disc_ratio_ESP$ratio <- disc_ratio_ESP$ntrips_tot/disc_ratio_ESP$ntrips
-
+  
   # 11) Aggregate official landings at MS, area, species, year, quarter, metier level
-
+  
   landings_totals <- landings_df %>%
     transmute(
       stock=stock,
@@ -351,44 +309,32 @@ discards_rdbfis <- function(sampling_df, landings_df, SP = NULL, GSA = NULL, YEA
       year,
       quarter,
       metier = fishing_activity_category_eu_l6,
-      gear = substr(fishing_activity_category_eu_l6, 1, 3),
       stratum = paste0(year, '_Q', quarter, '_', fishing_activity_category_eu_l6),
       land   = ifelse(is.na(official_landings_weight),
                       0, official_landings_weight)
     ) %>%
-    group_by(stock, flag_country, area, species, year, quarter, metier, gear, stratum) %>%
+    group_by(stock, flag_country, area, species, year, quarter, metier, stratum) %>%
     summarise(
       land = sum(land, na.rm = TRUE),
       .groups = "drop"
     )
-
-
+  
+  
   # 12) Estimate total discards by stratum
-
-  discards_totals <- landings_totals %>%
-    left_join(discard_ratio_res, by = c("flag_country", "year", "area", "gear", "species"))
-  discards_totals$landings_weight <- discards_totals$land
-  discards_totals$land <- discards_totals$landings_weight * discards_totals$discard_ratio_landings
-
-  missing_ratio <- is.na(discards_totals$discard_ratio_landings)
-  if (any(missing_ratio)) {
-    warning(
-      sum(missing_ratio),
-      " discard strata have no matching discard ratio; raised discard weights are set to NA for those strata.",
-      call. = FALSE
-    )
-  }
-
+  
+  discards_totals <- landings_totals %>% left_join(discard_ratio_res, by = c("year", "area", "metier", "species"))
+  discards_totals$disc <- discards_totals$land * discards_totals$discard_ratio_landings 
+  
   # 10) Restrict Sampling to LFD Discards
   sampling_df <- subset(sampling_df, catch_category == "Dis")
-
+  
   # 10a) Estimate number of samples (individuals) per stratum
-  nsample      <- sampling_df %>%
-    group_by(year, quarter, area, species, fishing_activity_category_eu_l6, stratum) %>%
+  nsample      <- sampling_df %>% 
+    group_by(year, quarter, area, species, fishing_activity_category_eu_l6, stratum) %>% 
     summarize(N_sampled= sum(number_at_length, na.rm=T) )
-
+  
   # 11) Build the base LFD table (lfd_base) - keep only necessary fields
-
+  
   fields_base <- c(
     "stock", 'flag_country', 'area', 'species',
     "commercial_size_category", "sampling_type",
@@ -398,9 +344,9 @@ discards_rdbfis <- function(sampling_df, landings_df, SP = NULL, GSA = NULL, YEA
     "quarter", "trip_code", "station_code",
     "stratum", "n_sets_hauls", "n_sampled_hauls"
   )
-
+  
   lfd_base <- sampling_df[, fields_base]
-
+  
   colnames(lfd_base) <- c(
     "stock", 'flag_country', 'area', 'species',
     "commercial_category", "sampling_type", "aggregation_level",
@@ -410,20 +356,20 @@ discards_rdbfis <- function(sampling_df, landings_df, SP = NULL, GSA = NULL, YEA
     "quarter", "trip", "haul",
     "stratum", "n_sets_hauls", "n_sampled_hauls"
   )
-
+  
   # 10) Estimate trip subsample_weights: observed (sub_w_trip_ob) and estimated from L-W relationship (sub_w_trip_est)
   st     <- stocks$stock
   r_list <- lapply(st, function(s) {
     temp1 <- lfd_base[lfd_base$stock == s, ]
     estimate_sub_sample_w(temp1, MS, st)  # call function
   })
-
+  
   # Combine all stocks back into one dataframe
   lfd_base <- do.call(rbind, r_list)
-
+  
   # flag entries when deviation is more than 50% (ratio less than 0.5 or more than 2)
   report <- subset(lfd_base, ratio>=2 | ratio<=0.5)
-
+  
   vnames <- c("stock", 'flag_country', 'area', 'species',
               "commercial_category", "sampling_type", "aggregation_level",
               "year", "metier", "w", "sub_w", "lc", "N",
@@ -431,76 +377,75 @@ discards_rdbfis <- function(sampling_df, landings_df, SP = NULL, GSA = NULL, YEA
               'n_sampled_hauls', 'SEX', 'A',	'B',
               'sub_w_trip_est',	'sub_w_trip_ob',	'ratio')
   lfd_base <- lfd_base[, vnames]
-
+  
   # 11) Define the length bins (1mm for crustaceans and 10mm all the rest).
-
+  
   crustaceans <- c('DPS', 'ARS', 'ARA', 'NEP', 'TGS', 'MTS')
   idx <- !(lfd_base$species %in% crustaceans)
   lfd_base$lc[idx] <- floor(lfd_base$lc[idx]/10) * 10
-
-
-  # 13) Write outputs
-
+  
+  
+  # 13) Write outputs 
+  
   #timestamp <- format(Sys.time(), "%Y%m%d_%H%M%S")  # kept for uniqueness within a session
   # Build output filename suffix: MS + GSA + SP + YEAR (mirrors QC scripts naming)
   suffix_parts <- MS
   if (!is.null(GSA))  suffix_parts <- c(suffix_parts, paste(GSA,  collapse = "-"))
   if (!is.null(SP))   suffix_parts <- c(suffix_parts, paste(SP,   collapse = "-"))
-  if (!is.null(YEAR)) suffix_parts <- c(suffix_parts, paste(YEAR, collapse = "-"))
   file_suffix <- paste(suffix_parts, collapse = "_")
-
+  
   #write_csv(
   #  lfd_base,
   #  file.path(out_dir, paste0("lfd_base_samples_", file_suffix, ".csv"))
   #)
-
+  
   write_csv(
     report,
     file.path(out_dir, paste0("inconsistent_subsample_w_", file_suffix, ".csv"))
   )
-
+  
   #write_csv(
   #  discards_totals,
   #  file.path(out_dir, paste0("landings_totals_strata_", file_suffix, ".csv"))
   #)
-
+  
   res <- list(
     stocks          = stocks,
     lfd_base        = lfd_base,
-    discards_totals = discards_totals,
+    discards_totals = discards_totals, 
     disc_ratio_ESP  = disc_ratio_ESP
   )
-
+  
   if (nrow(res$stocks) == 0) {
     stop("No stocks in sampling template.")
   }
-
+  
   cat("\nLFD Discards input preparation completed for all stocks.\n")
   cat("Combinations processed:\n")
   apply(res$stocks, 1, function(row) cat("  stock =", row["stock"],"\n"))
   cat("Outputs written in: ", out_dir, "\n")
-
+  
   # 13a) Report stocks + year combinations for which no landings were found
-
+  
   inds <- unique(res$lfd_base[ , c('stock', 'year')])
   indl <- unique(res$discards_totals[ , c('stock', 'year')])
-
+  
   inds <- as.character(interaction(inds$stock, inds$year, drop = TRUE))
   indl <- as.character(interaction(indl$stock, indl$year, drop = TRUE))
-
+  
   missl <- inds[!inds %in% indl]
   misss <- indl[!indl %in% inds]
-
+  
   if (length(missl)!=0){
     message(paste(
       "No official landings were found for the following stocks and years:",
       paste(missl, collapse = ", ")
     ))
   }
-
+  
   # 14) Perform LFD raising using MS specific method or user selected method
-
-
+  
+  
   # MLT raising method - not yet implemented
   raise_MLT <- function(res) {
     stop(
@@ -509,9 +454,9 @@ discards_rdbfis <- function(sampling_df, landings_df, SP = NULL, GSA = NULL, YEA
       "  Using default method = 'vigneau_mahevas'"
     )
   }
-
+  
   raise_by_country <- function(res, method) {
-
+    
     country  <- unique(res$lfd_base$flag_country) # switch to lfd method depending on country
     if (is.null(method)) {
       method <- country
@@ -526,8 +471,8 @@ discards_rdbfis <- function(sampling_df, landings_df, SP = NULL, GSA = NULL, YEA
         HRV = raise_trip_h(res),
         stop(paste("No method implemented for country:", country))
       )
-    } else {
-      raised_lfd <- switch(     # or apply method selected by user
+    } else {          
+      raised_lfd <- switch(     # or apply method selected by user 
         method,
         trip_cc = raise_trip_cc(res),
         trip_h = raise_trip_h(res),
@@ -542,118 +487,118 @@ discards_rdbfis <- function(sampling_df, landings_df, SP = NULL, GSA = NULL, YEA
         stop(paste("Not known method:", method))
       )
     }
-
+    
     return(raised_lfd)
   }
-
+  
   # Auxiliary function to handle raising by MS and default methods
-
+  
   raise_VM <- function(res) {
     stocks <- unique(res$lfd_base$stock)
-
+    
     result_list <- lapply(stocks, function(s) {
       lfd_stock <- res$lfd_base[res$lfd_base$stock == s, ]
       land_stock <- res$discards_totals[res$discards_totals$stock == s, ]
-
+      
       vigneau_mahevas(lfd_stock, land_stock)  # call stock-level raising function
     })
-
+    
     # Combine all stocks back into one dataframe
     x <- do.call(rbind, result_list)
     return(x)
   }
-
+  
   raise_trip_cc <- function(res) {
     stocks <- unique(res$lfd_base$stock)
-
+    
     result_list <- lapply(stocks, function(s) {
       lfd_stock <- res$lfd_base[res$lfd_base$stock == s, ]
       land_stock <- res$discards_totals[res$discards_totals$stock == s, ]
-
+      
       trip_cc(lfd_stock, land_stock)  # call stock-level raising function
     })
-
+    
     # Combine all stocks back into one dataframe
     x <- do.call(rbind, result_list)
     return(x)
   }
-
+  
   raise_trip_h <- function(res) {
     stocks <- unique(res$lfd_base$stock)
-
+    
     result_list <- lapply(stocks, function(s) {
       lfd_stock <- res$lfd_base[res$lfd_base$stock == s, ]
       land_stock <- res$discards_totals[res$discards_totals$stock == s, ]
-
+      
       trip_h(lfd_stock, land_stock)  # call stock-level raising function
     })
-
+    
     # Combine all stocks back into one dataframe
     x <- do.call(rbind, result_list)
     return(x)
   }
-
+  
   raise_GRC <- function(res) {
     stocks <- unique(res$lfd_base$stock)
-
+    
     result_list <- lapply(stocks, function(s) {
       lfd_stock <- res$lfd_base[res$lfd_base$stock == s, ]
       land_stock <- res$discards_totals[res$discards_totals$stock == s, ]
-
+      
       method_grc(lfd_stock, land_stock)  # call stock-level raising function
     })
-
+    
     # Combine all stocks back into one dataframe
     x <- do.call(rbind, result_list)
     return(x)
   }
-
+  
   raise_FRA <- function(res) {
     stocks <- unique(res$lfd_base$stock)
-
+    
     result_list <- lapply(stocks, function(s) {
       lfd_stock <- res$lfd_base[res$lfd_base$stock == s, ]
       land_stock <- res$discards_totals[res$discards_totals$stock == s, ]
-
+      
       method_fra(lfd_stock, land_stock)  # call stock-level raising function
     })
-
+    
     # Combine all stocks back into one dataframe
     x <- do.call(rbind, result_list)
     return(x)
   }
-
+  
   raise_ESP <- function(res) {
     stocks <- unique(res$lfd_base$stock)
-
+    
     result_list <- lapply(stocks, function(s) {
       lfd_stock <- res$lfd_base[res$lfd_base$stock == s, ]
       disc_ratio_ESP  <- res$disc_ratio_ESP
       method_esp_dis(lfd_stock, disc_ratio_ESP)  # call stock-level raising function
     })
-
+    
     # Combine all stocks back into one dataframe
     x <- do.call(rbind, result_list)
     return(x)
   }
-
+  
   raise_CYP <- function(res) {
     stocks <- unique(res$lfd_base$stock)
-
+    
     result_list <- lapply(stocks, function(s) {
       lfd_stock <- res$lfd_base[res$lfd_base$stock == s, ]
       land_stock <- res$discards_totals[res$discards_totals$stock == s, ]
-
+      
       method_cyp(lfd_stock, land_stock)  # call stock-level raising function
     })
-
+    
     # Combine all stocks back into one dataframe
     x <-do.call(rbind, result_list)
     return(x)
   }
-
+  
   raise_ITA <- function(res) {
-
+    
     # Map areas (GSAs) to methods
     ITAmethods <- c(
       "GSA9" = "ITA2",
@@ -664,22 +609,22 @@ discards_rdbfis <- function(sampling_df, landings_df, SP = NULL, GSA = NULL, YEA
       "GSA18" = "ITA2",
       "GSA19" = "ITA2"
     )
-
+    
     # Map each ITA method to its function
     method_map <- list(
       'ITA2' = raise_ITA2,
       'ITA3' = raise_ITA3
     )
-
+    
     # add method to res by gsa according to ITAmethods
     res <- lapply(res, function(df) {
       df$method <- ITAmethods[df$area]
       df
     })
-
+    
     # split the res list to one list per method
     method <- unique(res$lfd_base$method)
-
+    
     res_split <- vector("list", length(method))
     names(res_split) <- method
     for (i in 1: length(method)){
@@ -687,87 +632,87 @@ discards_rdbfis <- function(sampling_df, landings_df, SP = NULL, GSA = NULL, YEA
       res_split[[i]]$lfd_base <- subset(res$lfd_base, method==method[i])
       res_split[[i]]$discards_totals <- subset(res$discards_totals, method==method[i])
     }
-
+    
     # apply the method according to map
     res_list <- lapply(names(res_split), function(m) {
       method_map[[m]](res_split[[m]])
     })
-
+    
     final_res <- bind_rows(res_list)
   }
-
+  
   raise_ITA2 <- function(res) {
     stocks <- unique(res$lfd_base$stock)
-
+    
     result_list <- lapply(stocks, function(s) {
       lfd_stock <- res$lfd_base[res$lfd_base$stock == s, ]
       land_stock <- res$discards_totals[res$discards_totals$stock == s, ]
-
+      
       method_ita2(lfd_stock, land_stock)  # call stock-level raising function
     })
-
+    
     # Combine all stocks back into one dataframe
     x <- do.call(rbind, result_list)
     return(x)
   }
-
+  
   raise_ITA3 <- function(res) {
     stocks <- unique(res$lfd_base$stock)
-
+    
     result_list <- lapply(stocks, function(s) {
       lfd_stock <- res$lfd_base[res$lfd_base$stock == s, ]
       land_stock <- res$discards_totals[res$discards_totals$stock == s, ]
-
+      
       method_ita3(lfd_stock, land_stock)  # call stock-level raising function
     })
-
+    
     # Combine all stocks back into one dataframe
     x <- do.call(rbind, result_list)
     return(x)
   }
-
-  # 15) Raised lfds
+  
+  # 15) Raised lfds 
   raised_lfd <- raise_by_country(res, method)
-
+  
   raised_lfd <- raised_lfd[, c("flag_country", "year", "quarter", "area",  "species", "metier",
                                "lc", "land", "N_final")]
-
+  
   # remove stocks for which no landings records were found in landings template
   indr <- which(is.na(raised_lfd$flag_country))
   if (length(indr) > 0) {
     raised_lfd <- raised_lfd[-indr,]
   }
-
+  
   if (is.null(method)){
     method <- paste0('method_', MS)
     raised_lfd$method  <- method
   } else {
     raised_lfd$method  <- method
   }
-
+  
   # append with sampled individuals
   colnames(nsample) <- c('year', 'quarter','area', 'species', 'metier', 'stratum', 'N_sampled')
   raised_lfd <- raised_lfd %>% left_join(nsample, by = c("year", "area", "quarter", "species", "metier"))
-
+  
   # 16) Make and save plots
-
-  lfd_plot_rdbfis(raised_lfd, out_dir, "Disc")
-
+  
+  lfd_plot_rdbfis1(raised_lfd, out_dir, 'Disc')
+  
   # 17) Prepare MED&BS discards output
-
+  
   # merge with discards totals to get also the discards of strata for which no lfd was sampled
   medbs_out <- merge(raised_lfd, discards_totals, by=c("flag_country", "year", "quarter", "area",  "species", "metier"), all.x=T, all.y=T)
-
+  
   medbs_out    <- medbs_out[, c("flag_country", "year", "quarter", "area", "species", "metier",
                                 "lc", "land.y", "N_final", "method", "N_sampled")]
   colnames(medbs_out) <-  c("country", "year", "quarter", "area",  "species", "gear",
-                               "lc", "discards", "N_final", "method", "sample_size")
-
-  # get discards in tons, numbers in 1000 individuals and length bins in cm
-  medbs_out$lc <- medbs_out$lc/10
-  medbs_out$discards <- medbs_out$discards/1000
+                            "lc", "discards", "N_final", "method", "sample_size")
+  
+  # get discards in tons, numbers in 1000 individuals and length bins in cm 
+  medbs_out$lc <- medbs_out$lc/10  
+  medbs_out$discards <- medbs_out$discards/1000 
   medbs_out$N_final  <- medbs_out$N_final/1000
-
+  
   medbs_out    <- medbs_out %>%
     pivot_wider(
       names_from = lc,
@@ -775,44 +720,44 @@ discards_rdbfis <- function(sampling_df, landings_df, SP = NULL, GSA = NULL, YEA
     )
   lcnames <- seq(0,100,1)
   lcnew   <- lcnames[which(!(lcnames %in% colnames(medbs_out)))]
-
-  medbs_add <- as.data.frame(matrix(ncol=length(lcnew), nrow=nrow(medbs_out)))
+  
+  medbs_add <- as.data.frame(matrix(ncol=length(lcnew), nrow=nrow(medbs_out))) 
   colnames(medbs_add) <- lcnew
-
+  
   medbs_out <- cbind(medbs_out, medbs_add)
-
+  
   medbs_add1 <- as.data.frame(matrix(ncol=5, nrow=nrow(medbs_out)))
   colnames(medbs_add1) <- c("vessel_length", "mesh_size_range", "fishery", "specon", "unit")
   medbs_out <- cbind(medbs_out, medbs_add1)
   medbs_out$id <- paste(medbs_out$country, medbs_out$year, medbs_out$quarter, medbs_out$gear, medbs_out$area, sep='-')
-
+  
   cols <- c("id", "country","year","quarter","vessel_length","gear",
-    "mesh_size_range","fishery", "area","specon","species","discards","unit",
-    "0","1","2","3","4", "5","6","7","8","9", "10","11","12","13","14",
-    "15","16","17","18","19","20","21","22","23","24",
-    "25","26","27","28","29","30","31","32","33","34",
-    "35","36","37","38","39","40","41","42","43","44",
-    "45","46","47","48","49","50","51","52","53","54",
-    "55","56","57","58","59","60","61","62","63","64",
-    "65","66","67","68","69","70","71","72","73","74",
-    "75","76","77","78","79","80","81","82","83","84",
-    "85","86","87","88","89","90","91","92","93","94",
-    "95","96","97","98","99","100", "sample_size")
-
+            "mesh_size_range","fishery", "area","specon","species","discards","unit",
+            "0","1","2","3","4", "5","6","7","8","9", "10","11","12","13","14",
+            "15","16","17","18","19","20","21","22","23","24", 
+            "25","26","27","28","29","30","31","32","33","34",
+            "35","36","37","38","39","40","41","42","43","44",
+            "45","46","47","48","49","50","51","52","53","54",
+            "55","56","57","58","59","60","61","62","63","64",
+            "65","66","67","68","69","70","71","72","73","74",
+            "75","76","77","78","79","80","81","82","83","84",
+            "85","86","87","88","89","90","91","92","93","94",
+            "95","96","97","98","99","100", "sample_size")
+  
   medbs_out <- medbs_out[,cols]
   medbs_out$unit <- 'cm'
-  medbs_out$vessel_length <- NA
+  medbs_out$vessel_length <- NA 
   medbs_out$mesh_size_range <- substr(medbs_out$gear, 9, 16)
   medbs_out$fishery <- substr(medbs_out$gear, 5, 7)
   medbs_out$gear <- substr(medbs_out$gear, 1, 3)
-
+  
   medbs_out[,14:114][is.na(medbs_out[,14:114])]=-1
-
+  
   colnames(medbs_out)[14:114] <- paste0('lengthclass',colnames(medbs_out)[14:114])
-
-  # 18) write result in file
-
+  
+  # 18) write result in file 
+  
   readr::write_csv(medbs_out, file.path(out_dir, paste0("discards_", file_suffix, "-" , method, ".csv")))
-
+  
   return(raised_lfd)
 }
