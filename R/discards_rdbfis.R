@@ -58,7 +58,7 @@ discards_rdbfis <- function(sampling_df, landings_df, SP = NULL, GSA = NULL, YEA
                             sample_types=c('S', 'D', 'M'), use_mat=FALSE,
                             out_dir = "output", discard_ratio_out_dir = NULL,
                             discard_ratio_df = NULL) {
-
+  
   # 1) check dependencies
   # Packages must be loaded before calling discards_rdbfis()
   for (pkg in c("dplyr", "tidyr", "readr", "stringr", "lubridate", "ggplot2")) {
@@ -80,10 +80,10 @@ discards_rdbfis <- function(sampling_df, landings_df, SP = NULL, GSA = NULL, YEA
     stop("Required internal functions not found in the stat4RDBFIS namespace: ",
          paste(missing_fns, collapse = ", "),
          "\n  Rebuild/reinstall the package so all files under R/ are loaded.")
-
+  
   old_opts <- options(dplyr.summarise.inform = FALSE)
   on.exit(options(old_opts), add = TRUE)
-
+  
   # 1) get the MS, subset and stop if there are no sampling records 
   MS <- unique(sampling_df$flag_country)
   

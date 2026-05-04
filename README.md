@@ -28,7 +28,7 @@ Install from GitHub:
 
 ```r
 install.packages("remotes")
-remotes::install_github("ilariaco84/stat4RDBFIS")
+remotes::install_github("medbsrdb/stat4RDBFIS")
 ```
 
 Or install from a local source folder:
