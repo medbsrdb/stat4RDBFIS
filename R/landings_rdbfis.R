@@ -225,7 +225,8 @@ landings_rdbfis <- function(sampling_df, landings_df,
     stop("ERROR: sampling_df must be the output of crosschecks() - column 'quarter_cc' not found.
          Run crosschecks() before landings_rdbfis().")
          }
-
+  sampling_df$quarter <- sampling_df$quarter_cc
+  
   # 7) check for and remove NAs in basic numeric and character fields that take part in aggregations
 
   indl <- which(is.na(landings_df$official_landings_weight))
