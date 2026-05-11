@@ -220,12 +220,13 @@ landings_rdbfis <- function(sampling_df, landings_df,
       aggregation_level   = toupper(trimws(as.character(aggregation_level)))
     )
 
-  # get the quarter estimated in qc control
-  if (!"quarter_cc" %in% names(sampling_df)){
-    stop("ERROR: sampling_df must be the output of crosschecks() - column 'quarter_cc' not found.
-         Run crosschecks() before landings_rdbfis().")
-         }
-  sampling_df$quarter <- sampling_df$quarter_cc
+  # get the quarter estimated in qc control or if not present estimate here
+  if ("quarter_cc" %in% names(sampling_df)){
+    sampling_df$quarter <- sampling_df$quarter_cc
+  } else {
+    sampling_df$date_parsed <- suppressWarnings(as.Date(sampling_df$date, format = "%d/%m/%Y"))
+    sampling_df$quarter <- ceiling(as.integer(month(sampling_df$date_parsed))/3)
+  }
   
   # 7) check for and remove NAs in basic numeric and character fields that take part in aggregations
 
