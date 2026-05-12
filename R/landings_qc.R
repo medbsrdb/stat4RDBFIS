@@ -143,6 +143,16 @@ landings_qc <- function(
   check_log <- dplyr::tibble()
   all_errors <- dplyr::tibble()
   all_warnings <- dplyr::tibble()
+  format_qc_issue_output <- function(df) {
+    if (!"original_row_id" %in% names(df)) {
+      if (".row_id" %in% names(df)) {
+        df <- dplyr::rename(df, original_row_id = .row_id)
+      } else {
+        df <- dplyr::mutate(df, original_row_id = NA_integer_)
+      }
+    }
+    dplyr::relocate(df, original_row_id)
+  }
   
   # 3.1 LOAD AND NORMALIZE ----
   cat("Step 3.1: Loading and normalizing data...\n")
@@ -665,6 +675,9 @@ landings_qc <- function(
   # Drop QC helper columns before writing
   landings_clean <- landings %>%
     dplyr::select(-dplyr::ends_with("_orig"), -dplyr::any_of(c("stratum_key", ".row_id")))
+
+  all_errors <- format_qc_issue_output(all_errors)
+  all_warnings <- format_qc_issue_output(all_warnings)
   
   readr::write_csv(landings_clean,
             file.path(out_dir, paste0("landings_clean_for_qc", file_suffix, ".csv")))

@@ -282,6 +282,16 @@ crosschecks <- function(
   check_log    <- dplyr::tibble()
   all_errors   <- dplyr::tibble()
   all_warnings <- dplyr::tibble()
+  format_qc_issue_output <- function(df) {
+    if (!"original_row_id" %in% names(df)) {
+      if (".row_id" %in% names(df)) {
+        df <- dplyr::rename(df, original_row_id = .row_id)
+      } else {
+        df <- dplyr::mutate(df, original_row_id = NA_integer_)
+      }
+    }
+    dplyr::relocate(df, original_row_id)
+  }
   n_landings_removed <- 0L
   n_sampling_landings_removed <- 0L
   n_sampling_discards_removed <- 0L
@@ -674,9 +684,11 @@ crosschecks <- function(
     dplyr::filter(!is.na(length_num)) %>%
     dplyr::group_by(flag_country, year, trip_code, fish_id) %>%
     dplyr::summarise(
-      range = ifelse(dplyr::n_distinct(length_num) > 1,
-                     max(length_num, na.rm = TRUE) - min(length_num, na.rm = TRUE),
-                     0),
+      range = if (dplyr::n_distinct(length_num) > 1) {
+        max(length_num, na.rm = TRUE) - min(length_num, na.rm = TRUE)
+      } else {
+        0
+      },
       conflict = range > 50,
       .groups = "drop"
     ) %>%
@@ -690,9 +702,11 @@ crosschecks <- function(
     dplyr::filter(!is.na(age_num)) %>%
     dplyr::group_by(flag_country, year, trip_code, fish_id) %>%
     dplyr::summarise(
-      range = ifelse(dplyr::n_distinct(age_num) > 1,
-                     max(age_num, na.rm = TRUE) - min(age_num, na.rm = TRUE),
-                     0),
+      range = if (dplyr::n_distinct(age_num) > 1) {
+        max(age_num, na.rm = TRUE) - min(age_num, na.rm = TRUE)
+      } else {
+        0
+      },
       conflict = range > 2,
       .groups = "drop"
     ) %>%
@@ -1039,9 +1053,11 @@ crosschecks <- function(
     dplyr::filter(!is.na(length_num)) %>%
     dplyr::group_by(flag_country, year, trip_code, fish_id) %>%
     dplyr::summarise(
-      range = ifelse(dplyr::n_distinct(length_num) > 1,
-                     max(length_num, na.rm = TRUE) - min(length_num, na.rm = TRUE),
-                     0),
+      range = if (dplyr::n_distinct(length_num) > 1) {
+        max(length_num, na.rm = TRUE) - min(length_num, na.rm = TRUE)
+      } else {
+        0
+      },
       conflict = range > 50,
       .groups = "drop"
     ) %>%
@@ -1055,9 +1071,11 @@ crosschecks <- function(
     dplyr::filter(!is.na(age_num)) %>%
     dplyr::group_by(flag_country, year, trip_code, fish_id) %>%
     dplyr::summarise(
-      range = ifelse(dplyr::n_distinct(age_num) > 1,
-                     max(age_num, na.rm = TRUE) - min(age_num, na.rm = TRUE),
-                     0),
+      range = if (dplyr::n_distinct(age_num) > 1) {
+        max(age_num, na.rm = TRUE) - min(age_num, na.rm = TRUE)
+      } else {
+        0
+      },
       conflict = range > 2,
       .groups = "drop"
     ) %>%
@@ -1190,10 +1208,13 @@ crosschecks <- function(
                     fishing_activity_category_eu_l6, quarter_from_date)
 
   # Keep only trips present in both categories
-  common_trips <- intersect(
-    trips_lan %>% dplyr::select(flag_country, year, trip_code),
-    trips_dis %>% dplyr::select(flag_country, year, trip_code)
-  )
+  common_trips <- trips_lan %>%
+    dplyr::select(flag_country, year, trip_code) %>%
+    dplyr::inner_join(
+      trips_dis %>% dplyr::select(flag_country, year, trip_code),
+      by = c("flag_country", "year", "trip_code")
+    ) %>%
+    dplyr::distinct()
 
   if (nrow(common_trips) == 0) {
     cat("  [OK] Check 3.13: intra-trip Lan/Dis consistency skipped\n")
@@ -1284,6 +1305,8 @@ crosschecks <- function(
     check_log <- dplyr::bind_rows(check_log,
                            log_check(sampling_landings, "4.0", "ERROR",
                                      "Zero common strata between sampling and landings: raising impossible"))
+    all_errors <- format_qc_issue_output(all_errors)
+    all_warnings <- format_qc_issue_output(all_warnings)
     out <- list(
       landings_clean  = landings,
       sampling_clean  = NULL,
@@ -1799,6 +1822,9 @@ crosschecks <- function(
     dplyr::arrange(flag_country, year, quarter, area,
                    fishing_activity_category_eu_l6, species)
   readr::write_csv(strata_diagnostics, strata_diag_file)
+
+  all_errors <- format_qc_issue_output(all_errors)
+  all_warnings <- format_qc_issue_output(all_warnings)
   
   # Consolidated errors ----
   if (nrow(all_errors) > 0) {
