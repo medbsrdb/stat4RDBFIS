@@ -195,6 +195,16 @@ samplings_qc <- function(
   check_log <- dplyr::tibble()
   all_errors <- dplyr::tibble()
   all_warnings <- dplyr::tibble()
+  format_qc_issue_output <- function(df) {
+    if (!"original_row_id" %in% names(df)) {
+      if (".row_id" %in% names(df)) {
+        df <- dplyr::rename(df, original_row_id = .row_id)
+      } else {
+        df <- dplyr::mutate(df, original_row_id = NA_integer_)
+      }
+    }
+    dplyr::relocate(df, original_row_id)
+  }
   
   # 3.1 LOAD AND NORMALIZE DATA ----
   cat("Step 3.1: Loading and normalizing data...\n")
@@ -1161,9 +1171,24 @@ samplings_qc <- function(
                  " strata have measured fish but no aged individuals")
         )
       )
+      strata_no_age_records <- sampling %>%
+        dplyr::filter(!is.na(length_class)) %>%
+        dplyr::mutate(
+          date_parsed_dt = lubridate::as_datetime(date_parsed),
+          quarter = dplyr::case_when(
+            !is.na(date_parsed_dt) ~ as.integer(ceiling(lubridate::month(date_parsed_dt) / 3)),
+            TRUE                   ~ NA_integer_
+          )
+        ) %>%
+        dplyr::semi_join(
+          strata_no_age %>% dplyr::select(year, quarter, area, species),
+          by = c("year", "quarter", "area", "species")
+        ) %>%
+        dplyr::select(-dplyr::any_of("date_parsed_dt"))
+
       all_warnings <- dplyr::bind_rows(
         all_warnings,
-        strata_no_age %>%
+        strata_no_age_records %>%
           dplyr::mutate(check_id      = "3.4.19",
                         check_message = "Stratum with measured fish but no aged individuals")
       )
@@ -1372,7 +1397,7 @@ samplings_qc <- function(
       csv_path <- file.path(plot_dir,
                             paste0("ALK_outliers_", check_id_str, "_",
                                    cc_label, file_suffix, ".csv"))
-      utils::write.csv(all_outliers, csv_path, row.names = FALSE)
+      utils::write.csv(format_qc_issue_output(all_outliers), csv_path, row.names = FALSE)
       cat("    Outlier records saved to:", csv_path, "\n")
       if (has_ggplot2)
         cat("    Output saved to:", plot_dir, "\n\n")
@@ -1620,12 +1645,12 @@ samplings_qc <- function(
                             paste0("LEN_outliers_", check_id_str, "_",
                                    cc_label, file_suffix, ".csv"))
       utils::write.csv(
-        all_outliers %>%
+        format_qc_issue_output(all_outliers %>%
           dplyr::select(dplyr::any_of(c(
             "year", "quarter", "area", "species", "catch_category",
             "trip_code", "fish_id", "length_class", "sex", ".row_id",
             "lower_fence", "upper_fence", "q1", "q3", "iqr"
-          ))),
+          )))),
         csv_path, row.names = FALSE
       )
       cat("    Outlier records saved to:", csv_path, "\n")
@@ -1940,6 +1965,9 @@ samplings_qc <- function(
   
   sampling_clean <- sampling %>%
     dplyr::select(-dplyr::ends_with("_orig"), -dplyr::any_of(c("date_parsed", "date_parsed_dt", "date_year", "year_num", ".row_id")))
+
+  all_errors <- format_qc_issue_output(all_errors)
+  all_warnings <- format_qc_issue_output(all_warnings)
   
   readr::write_csv(sampling_clean, file.path(out_dir, paste0("sampling_clean_for_qc", file_suffix, ".csv")))
   
